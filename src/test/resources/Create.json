@@ -1,0 +1,16 @@
+{
+    viewer {
+    login
+}
+ 
+   repository(name: "Java8",owner: "ShivasubramaniamR") {
+     createdAt 
+     id
+     name
+     updatedAt 
+     owner {
+         url
+     }
+
+   }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2116" started-at="2022-07-16T07:50:46 IST" finished-at="2022-07-16T07:50:48 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2116" started-at="2022-07-16T07:50:46 IST" finished-at="2022-07-16T07:50:48 IST">
+      <class name="mocking.LearnTemplate">
+        <test-method status="PASS" signature="incidentCreation()[pri:0, instance:mocking.LearnTemplate@1efee8e7]" name="incidentCreation" duration-ms="2068" started-at="2022-07-16T07:50:46 IST" finished-at="2022-07-16T07:50:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incidentCreation -->
+      </class> <!-- mocking.LearnTemplate -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

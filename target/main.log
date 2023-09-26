@@ -1,0 +1,2790 @@
+10:36:12.762 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:36:13.994 request:
+1 > POST https://dev134534.service-now.com/com/api/now/table/incident
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic YWRtaW46OEUhdXYxeW5eRlBY
+1 > Connection: Keep-Alive
+1 > Content-Length: 57
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dev134534.service-now.com
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_333)
+{"short_description":"This is created from karate data1"}
+
+10:36:16.268 response time in milliseconds: 2273.00
+1 < 302
+1 < Content-Length: 0
+1 < Date: Sat, 19 Nov 2022 05:06:15 GMT
+1 < Location: /session_timeout.do
+1 < Server: ServiceNow
+1 < Server-Timing: sem_wait;dur=1, sesh_wait;dur=0
+1 < Set-Cookie: [JSESSIONID=21F317A9D771B870F51AA0A3CBE17741; Path=/; HttpOnly; SameSite=None; Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; SameSite=None; Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; SameSite=None; Secure, glide_user_route=glide.423c986a8aa1673cf90112f2f88ba9f8; Max-Age=2147483647; Expires=Thu, 07-Dec-2090 08:20:22 GMT; Path=/; HttpOnly; SameSite=None; Secure, BIGipServerpool_dev134534=730115850.63040.0000; path=/; Httponly; Secure; SameSite=None; Secure]
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Is-Logged-In: false
+1 < X-Transaction-ID: 090a97701b13
+
+10:36:16.274 request:
+2 > GET https://dev134534.service-now.com/com/api/now/table/incident
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Basic YWRtaW46OEUhdXYxeW5eRlBY
+2 > Connection: Keep-Alive
+2 > Content-Type: application/json; charset=UTF-8
+2 > Cookie: BIGipServerpool_dev134534=730115850.63040.0000; JSESSIONID=21F317A9D771B870F51AA0A3CBE17741; glide_user_route=glide.423c986a8aa1673cf90112f2f88ba9f8
+2 > Host: dev134534.service-now.com
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_333)
+
+10:36:16.576 response time in milliseconds: 291.37
+2 < 200
+2 < Cache-Control: no-cache,no-store,must-revalidate,max-age=-1
+2 < Content-Type: text/html;charset=UTF-8
+2 < Date: Sat, 19 Nov 2022 05:06:15 GMT
+2 < Expires: 0
+2 < Pragma: no-store,no-cache
+2 < Referrer-Policy: same-origin
+2 < Server: ServiceNow
+2 < Server-Timing: wall;dur=40, sem_wait;dur=0, sesh_wait;dur=0, app_cpu;dur=30, db;dur=4, acl;dur=1, br;dur=null, ui_action;dur=0, cache_build;dur=0, scripting;dur=1
+2 < Set-Cookie: [glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; SameSite=None; Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; SameSite=None; Secure]
+2 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Is-Logged-In: false
+2 < X-Transaction-ID: cd0adb341b13
+<!DOCTYPE html><html lang="en" class=" ltr " data-doctype="true" dir="ltr" ontouchend="CustomEvent.fireAll('body_clicked', event);" onclick="CustomEvent.fireAll('body_clicked', event);"><head><title>ServiceNow</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"></meta><meta http-equiv="cache-control" content="public"></meta><script src="/uxasset/externals/service-worker/loader.jsdbx?sysparm_substitute=false"></script><script>var mswDisabledValue = "false";
+			var disabled = mswDisabledValue === 'true' ? true : false;
+			var serviceWorkers = JSON.parse("[{\"scope\":\"/\",\"serviceWorkerUrl\":\"/uxsw/scope/root.js\"},{\"scope\":\"/x\",\"serviceWorkerUrl\":\"/uxsw/scope/now_x.js\"},{\"scope\":\"/now\",\"serviceWorkerUrl\":\"/uxsw/scope/now_x.js\"}]");
+			var SERVICE_WORKER_MANAGER_CONFIG = {disabled, serviceWorkers};
+			if (window.serviceWorkerManager) window.serviceWorkerManager.init(SERVICE_WORKER_MANAGER_CONFIG);</script><meta name="viewport" content="initial-scale=1.0"></meta><script type="text/javascript" data-description="globals population">
+	window.NOW = window.NOW || {};
+	var g_loadTime = new Date();
+	var lastActivity = new Date();
+	var g_lang = 'en';
+	var g_system_lang = 'en';
+	var g_enhanced_activated = 'true';
+	  var g_popup_timeout = parseInt(100);
+	var g_export_warn_threshold = parseInt(10000);
+	  var g_event_handler_ids = {};
+	var g_event_handlers = [];
+	var g_event_handlers_onLoad = [];
+	var g_event_handlers_onSubmit = [];
+	var g_event_handlers_onChange = [];
+	var g_event_handlers_onCellEdit = {};
+	var g_event_handlers_localCache = {};
+	var g_event_handlers_queryTracking = true;
+	var g_user_date_time_format = "yyyy-MM-dd HH:mm:ss";
+	var g_user_date_format = "yyyy-MM-dd";
+	var g_user_decimal_separator = ".";
+	var g_user_grouping_separator = ",";
+	var g_glide_list_separator = ", ";
+	var g_allow_field_dependency_for_templates = ("true" === "true");
+	var g_tz_offset = -28800000;
+	  var g_tz_user_offset = true;
+	var g_first_day_of_week = parseInt(1, 10);
+	var g_date_picker_first_day_of_week = parseInt(0, 10);
+	  var g_full_calendar_edit = true;
+	var g_submitted = false;
+	var g_max_table_length = 80;
+	var g_fontSizePreference = "";
+	var g_fontSize = "10pt";
+	// use to be the sys_property glide.ui.js_error_notify, hard coded for PRB603998
+	var g_jsErrorNotify = "true";
+	var g_cancelPreviousTransaction = true;
+	var g_text_direction = "ltr";
+	var g_glide_list_filter_max_length =  parseInt("0", 10);
+	var g_accessibility = false;
+	var g_accessibility_tooltips = false;
+	var g_accessibility_tooltip_duration = parseInt("10", 10);
+	var g_accessibility_visual_patterns = false;
+	var g_accessibility_screen_reader_table = false;
+	var g_detail_row = false;
+	var g_builddate = "03-17-2022_1811";
+	// default values to be used in absence of user preferences are hard coded below
+	// as well as in keyboardShortcuts.js and keyboard_preference_changer.xml
+	window.g_keyboard_shortcuts = {};
+	window.g_keyboard_shortcuts.allow_in_input_fields = false;
+	window.g_keyboard_shortcuts.enabled = true;
+	window.g_keyboard_shortcuts.global_search = {};
+	window.g_keyboard_shortcuts.global_search.enabled = true;
+	window.g_keyboard_shortcuts.global_search.key_combination = 'ctrl+alt+g';
+	window.g_keyboard_shortcuts.main_frame = {};
+	window.g_keyboard_shortcuts.main_frame.enabled = true;
+	window.g_keyboard_shortcuts.main_frame.key_combination = 'ctrl+alt+p';
+	window.g_keyboard_shortcuts.navigator_toggle = {};
+	window.g_keyboard_shortcuts.navigator_toggle.enabled = true;
+	window.g_keyboard_shortcuts.navigator_toggle.key_combination = 'ctrl+alt+c';
+	window.g_keyboard_shortcuts.navigator_filter = {};
+	window.g_keyboard_shortcuts.navigator_filter.enabled = true;
+	window.g_keyboard_shortcuts.navigator_filter.key_combination = 'ctrl+alt+f';
+	window.g_keyboard_shortcuts.impersonator = {}
+	window.g_keyboard_shortcuts.impersonator.enabled = true;
+	window.g_keyboard_shortcuts.impersonator.key_combination = 'ctrl+alt+i';
+	var g_concourse_onmessage_enforce_same_origin = 'true'.toLowerCase() === 'true';
+	var g_concourse_onmessage_enforce_same_origin_whitelist = '';
+	window.g_load_functions = [];
+	window.g_render_functions = [];
+	window.g_late_load_functions = [];
+	window.g_tiny_url = {};
+	window.g_tiny_url.use_tiny = 'true' === 'true';
+	window.g_tiny_url.min_length = parseInt('1024');
+	
+	
+	var g_ck = '450a97701b131110102e0fa2604bcb6bfbc21ea9e8869469275c6b0030eb7ea61dc3c88e';
+	
+
+	
+	var g_acWaitTime = parseInt(250);
+	
+
+	var g_autoRequest = '';
+
+	try {
+		window.NOW.dateFormat = JSON.parse("{\"timeAgo\": false, \"dateBoth\": false}");
+	} catch (e) {
+		window.NOW.dateFormat = {timeAgo: false, dateBoth: false};
+	}
+
+	window.NOW.dateFormat.dateStringFormat = "yyyy-MM-dd";
+	window.NOW.dateFormat.timeStringFormat = "HH:mm:ss";
+	window.NOW.shortDateFormat = false;
+	window.NOW.listTableWrap = true;
+	window.NOW.compact = false;
+  	window.NOW.templateToggle = false;
+	window.NOW.tabbed = true;
+	window.NOW.permalink = true;
+	window.NOW.useSimpleStorage = true;
+	window.NOW.httpRequestCompressionThreshold = 40000;
+	window.NOW.httpRequestCompressionLevel = -1;
+	window.NOW.httpRequestCompressionMemoryLevel = -1;
+	window.NOW.deferAmbConnection = false;
+	window.NOW.deferredAmbConnectionTimeout = 10000;
+	window.NOW.simpleStorageSynch = "573613301b131110102e0fa2604bcb70";
+	window.NOW.language =  'en';
+	window.NOW.listOpenInAppTab = false;
+	window.NOW.floatingScrollbars = false;
+	
+	window.NOW.user = {};
+	window.NOW.user.preferences = [];
+	window.NOW.user.roles = '';
+	window.NOW.user.allRoles = '';
+	window.NOW.user.userID = '5136503cc611227c0183e96598c4f706';
+	window.NOW.user.departmentID = '';
+	window.NOW.user.firstName = '';
+	window.NOW.user.lastName = 'Guest';
+	window.NOW.user.name = 'guest';
+  	window.NOW.user.isImpersonating = false;
+	window.NOW.batch_glide_ajax_requests = 'true' === 'true';
+	window.NOW.batch_glide_ajax_requests_max_time_in_queue = ~~'50';
+	window.NOW.batch_glide_ajax_disable_time = ~~'1000';
+
+	window.NOW.currency = {};
+	window.NOW.currency.code = 'USD';
+	window.NOW.locale = {};
+	window.NOW.locale.code = 'en_US';
+
+	window.NOW.attachment = {};
+	
+	window.NOW.attachment.overflow_limit =  parseInt('3', 10);
+	window.NOW.isPolarisEnabled = "true";
+	window.NOW.polaris_page_info ={"canUsePolarisCSS":true,"canUsePolarisTemplates":true,"jvar_form_name":"session_timeout"};</script><script data-comment="GlideUser initialization">(function() {
+		 g_render_functions.push(setGlideUser);
+		function setGlideUser() {
+			if (window.g_user || !window.GlideUser)
+		return;
+
+		window.g_user = new GlideUser(NOW.user.name,
+			  NOW.user.firstName,
+			  NOW.user.lastName,
+			  NOW.user.roles,
+			  NOW.user.userID,
+			  NOW.user.departmentID);
+		window.g_user.setRoles(NOW.user.allRoles, true);
+		}
+	})();</script><script data-description="NOW glide web analytics siteid and url">window.snWebaConfig = window.snWebaConfig || {};
+		// glide web analytics config
+		window.snWebaConfig.siteId = "0";
+		window.snWebaConfig.trackerURL = "";
+		window.snWebaConfig.webaScriptPath = "/scripts/piwik-3.1.1/thirdparty/piwik.min.js";
+		window.snWebaConfig.ambClient = (window.g_ambClient) ? window.g_ambClient : ((window.amb)? window.amb.getClient(): "");
+		window.snWebaConfig.subscribed = false;</script><script type="text/javascript" src="/ConditionalFocus.jsdbx?v=03-17-2022_1811&amp;c=7_88"></script><link href="favicon.ico?v=4" rel="shortcut icon"></link><script>// window.performance in Chrome, Firefox, and Internet Explorer 9+ (not Safari)
+				window.NOW.xperf = window.performance || {};
+				if (!NOW.xperf.now) {
+					NOW.xperf.now = function() { return new Date().getTime(); };
+				}
+				NOW.xperf.parseBegin = NOW.xperf.now();
+				NOW.xperf.cssBegin = NOW.xperf.now();</script><link type="text/css" rel="stylesheet" href="/styles/css_includes_doctype_polaris.cssx?v=03-17-2022_1811&amp;c=8e6697301b131110102e0fa2604bcb25&amp;theme=Polaris"></link><script>window.NOW = window.NOW || {};
+		 NOW.isUsingPolaris = true;</script><link type="text/css" rel="stylesheet" href="/styles/polarisberg/css_includes_polarisberg.cssx?v=03-17-2022_1811&amp;c=8e6697301b131110102e0fa2604bcb25&amp;theme=Polaris"></link><link type="text/css" rel="stylesheet" href="/polarisberg_theme_variables.do?c=hnsK6bkZtvJNOUzZMYmfkWgB9Bc="></link><script>NOW.xperf.cssEnd = NOW.xperf.now();
+			NOW.xperf.scriptBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/js_includes_customer.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script>NOW.xperf.scriptEnd = NOW.xperf.now();
+				NOW.xperf.parseEnd = NOW.xperf.now();
+				$j(function() {
+					var x = NOW.xperf;
+					var last = x.lastDoctypeEnd - x.lastDoctypeBegin;
+					if (window.console) {
+						console.log("+-- Parse times");
+						console.log("| CSS parse: " + (x.cssEnd - x.cssBegin));
+						console.log("| JS  doctype: " + (x.scriptEnd - x.scriptBegin));
+						console.log("| JS at end of page: " + last);
+						console.log("+-- All parsing: " + (x.parseEnd - x.parseBegin + last));
+					}
+
+					var ms = Math.round(x.parseEnd - x.parseBegin + last);
+					CustomEvent.fire('page_timing', { name: 'PARS', ms: ms, win: window });
+
+					if (window.performance && performance.timing) {
+						NOW.xperf.z = new Date().getTime();
+						setTimeout(function () {
+						   var x = performance.timing.loadEventEnd - performance.timing.domContentLoadedEventStart;
+						   CustomEvent.fire('page_timing', { name: 'DOMC', ms: x, win: window });
+						   x = performance.timing.loadEventStart - NOW.xperf.z;
+						   CustomEvent.fire('page_timing', { name: 'PROC', ms: x, win: window });
+						}, 250);  // has to be done after the loadEvent ends
+					}
+				})</script><script type="text/javascript" src="/scripts/doctype/js_includes_legacy.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" data-comment="navpage layout preferences, onfocus observation">/**
+	* Every window needs to observe these events.
+	*/
+	if (Prototype.Browser.IE && !isMSIE9) {
+		document.onfocusout = function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); };
+		document.onfocusin = function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); };
+	} else {
+		Event.observe(window, 'blur', function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); });
+		Event.observe(window, 'focus', function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); });
+	}</script><script type="text/javascript">g_swLoadTime = new StopWatch(g_loadTime);
+
+    if (window.CustomEvent){
+        CustomEvent.fireAll("ck_updated", "450a97701b131110102e0fa2604bcb6bfbc21ea9e8869469275c6b0030eb7ea61dc3c88e");
+	    CustomEvent.fireTop("navigation.complete", window);
+	}
+
+    addLoadEvent( function() {
+
+		if (isValidTouchDevice())
+			addTouchScrollClassToBody();
+
+      if (typeof g_ck != 'undefined') {
+        CustomEvent.observe("ck_updated", function(ck) { g_ck = ck; });
+        CustomEvent.fireAll("ck_updated", "450a97701b131110102e0fa2604bcb6bfbc21ea9e8869469275c6b0030eb7ea61dc3c88e");}try {
+              var helpico = getTopWindow().document.getElementById("help_ico");
+
+              if (helpico) {
+                var urlname=window.location.pathname.split("?");
+                var search_str = window.location.search;
+                
+                // if this is a form, extract the record's sys_id...
+                var sys_id_loc = search_str.search(/sys_id=[0-9a-f]{32}/i);
+                var sys_id_str = (sys_id_loc != -1) ? search_str.substr(sys_id_loc, 39) : null;
+                
+                // make the URL to our context help processor...
+                var url_search = "?sysparm_url=" + urlname[0];
+                if (sys_id_loc != -1)
+                   url_search += "&" + sys_id_str;
+
+               	helpico.href="context_help.do" + url_search;                	
+              }
+            } catch (exception) {}
+
+      synchCache();
+      pageLoaded();
+    });
+    
+    function synchCache() {
+      try {
+        var w = getTopWindow();
+        if (w.g_cache_message)
+          w.g_cache_message.stamp("573613301b131110102e0fa2604bcb70");
+  
+        if (w.g_cache_td)
+          w.g_cache_td.stamp("88d99bf41b131110102e0fa2604bcb10");
+      } catch(e) {}
+    }
+
+    function isValidTouchDevice() {
+		var navigator = window.navigator || {};
+		var devices;
+		try {
+			devices = 'iPad,Android'.split(',');
+		} catch(ex) {
+			devices = [];
+		}
+		return devices.some(function(item) {return item.trim() === navigator.platform;});
+	}
+
+	function addTouchScrollClassToBody() {
+		if ('ontouchstart' in window ||
+				(navigator.maxTouchPoints !== 'undefined' && navigator.maxTouchPoints > 0) ||
+				(navigator.msMaxTouchPoints !== 'undefined' && navigator.msMaxTouchPoints > 0)) {
+			if (typeof document.body != undefined) {
+				document.body.classList.add('touch_scroll');
+			}
+		}
+	}
+  </script><!--googleoff: all--><noscript>This site requires JavaScript to be enabled</noscript> <!--googleon: all--><script type="text/javascript" src="/scripts/app.guided_tours/js_guided_tours_includes.jsx?v=03-17-2022_1811"></script></head><body class="                -polaris " data-formName="session_timeout"><span class="sr-only"><div id="html_page_aria_live_polite" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="polite"></div><div id="html_page_aria_live_assertive" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="assertive"></div></span><div class="outputmsg_div"><div id="output_messages" class="outputmsg_container outputmsg_hide"><button type="button" aria-label="Close Messages" id="close-messages-btn" class="btn btn-icon close icon-cross" onclick="GlideUI.get().onCloseMessagesButtonClick(this); return false;"></button><div class="outputmsg_div" aria-live="polite" role="region" data-server-messages="false"></div></div><script>addRenderEvent(function() {CustomEvent.fire('glide_optics_inspect_update_watchfield', '');});
+
+			var accessibilityEnabled = Boolean(false);
+			if (accessibilityEnabled) {
+				$j(function() {
+					$j('#output_messages .btn.btn-icon.close').focus();
+				});
+			}</script><span class="ui_notification" data-type="session_change" data-text="" data-attr-session_domain="global"></span></div><div class="loading-container"><h1 class="loading-message">You are not logged in, or your session has expired. Redirecting to the login page</h1><div class="loading-indicator icon-loading icon-lg"></div></div><script data-comment="loading_page redirect">setTimeout(function() {
+				top.location.href = 'nav_to.do?uri=welcome.do';
+			}, 1500);</script><div style="border:none; visibility:hidden"><form name="sys_personalize" style="display:inline" method="GET" action="slushbucket.do"><input type="hidden" name="sysparm_referring_url" value="session_timeout.do"></input><input type="hidden" name="sysparm_view" value=""></input></form></div><script>(function() {
+        addLateLoadEvent(throwFrameLoaded);
+        // find if padding is needed
+        var pad = (isMSIE6 || isMSIE7 || navigator.userAgent.indexOf('MSIE 8') != -1) ? 1 : 0;
+        function throwFrameLoaded() {
+            try {
+                if (window.parent.CustomEvent) {
+                    // history suggests that if we don't size it down on page load,
+                    // when we check the height it will show the previous page's height
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, 10);
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, getPageHeight());
+                }
+            } catch (e) {}
+        }
+        function throwFrameSized() {
+            try {
+                if (window.parent.CustomEvent) {
+                    // IE9/IE10: resize events will be continuously triggered when there is a difference between document.body.scrollHeight and window.frameElement.height
+                    // to solve this issue, we do not fire event if the height we are going to set is the same as the height obtained after the previous fired event
+                    var previousHeight = window["g_iframe_height"];
+                    var pageHeight = getPageHeight();
+                    if (previousHeight != pageHeight) {
+                        window.parent.CustomEvent.fire('content_frame.resized', self.name, pageHeight);
+                        // IE9/IE10: page height may be changed again after the above firing. So we have to call getPageHeight() to get the new height after the above event has been fired.
+                        window["g_iframe_height"] = getPageHeight();
+                    }
+                }
+            } catch (e) {}
+        }
+
+        function throwFrameSizedSmaller(){
+            try {
+                if (window.parent.CustomEvent) {
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, getPageHeight(true));
+                }
+            } catch (e) {}
+        }
+
+        /**
+         * Simply speaking, scrollHeight and offsetHeight work differently on different browsers
+         * and in and out of quirks mode. IE9 has bugs that do not report them correctly even if
+         * you pick the right one, so we've built some extra controls.
+         */
+        function getPageHeight(resizeSmall) {
+            var popupElement, popupHeight;
+            // first, look for popups
+            var popups = $$('body > div.popup, .modal.in > .modal-dialog');
+            if (popups.length > 0) {
+                popupElement = popups[0];
+                popupHeight = popupElement.scrollHeight + popupElement.offsetTop;
+                //padding is needed or else the bottom border of the popup will be missing
+                return (document.body.scrollHeight > popupHeight ? document.body.scrollHeight : popupHeight) + pad;
+            }
+            // then, look for form elements
+            // use more specific selector to reduce browser response time
+            if ($$('body > div.section_header_content_no_scroll').length > 0) {
+                var mainContentHeight = $$('body > div.section_header_content_no_scroll')[0].scrollHeight;
+                
+                // we use the form_title class to distinguish between UI15+ where the form title actually adds to the height
+                var header = $$('body > div.section_header_div_no_scroll.form_title');
+                var headerHeight = header.length == 0 ? 0 : header[0].getHeight();
+                return mainContentHeight + headerHeight;
+            }
+            // then, look for touch scroll elements *CALGARY and forward*
+            if ($$('body > .touch_scroll').length > 0)
+                return $$('body > .touch_scroll')[0].scrollHeight;
+            // then, get the normal page height
+            if (document.body.scrollHeight || document.documentElement.scrollHeight) {
+                if (!resizeSmall){
+                    if(document.body.scrollHeight > document.documentElement.scrollHeight)
+                        return document.body.scrollHeight;
+                    else
+                        return document.documentElement.scrollHeight;
+                }
+                else{
+                    if(document.documentElement.scrollHeight > document.body.scrollHeight)
+                        return document.body.scrollHeight;
+                    else
+                        return document.documentElement.scrollHeight;
+                }
+            }
+            return document.body.offsetHeight;
+        }
+        // start observing only after page has been loaded to avoid handling large number of resize events especially on IE 7 and IE 8
+        addAfterPageLoadedEvent(function() {
+            CustomEvent.observe('frame.resized', throwFrameSized);
+            CustomEvent.observe('frame.resized.smaller', throwFrameSizedSmaller);
+            CustomEvent.observe('partial.page.reload', throwFrameLoaded); // specifically, reports and lists that cause the page to shrink
+            Event.observe(document.onresize ? document : window, "resize", throwFrameSized);
+            _frameChanged();
+        });
+    })();</script><span style="display:none" data-comments="js_includes_last_doctype"></span><script>NOW.xperf.lastDoctypeBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_last_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/heisenberg/heisenberg_all.jsx?v=03-17-2022_1811"></script><script type="text/javascript" src="/scripts/js_includes_list_edit_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/transaction_scope_includes.jsx?v=03-17-2022_1811"></script><script>if ('') 
+			GlideTransactionScope.setTransactionScope('');
+		if ('') 
+			GlideTransactionScope.setRecordScope('');
+		if ('') 
+			GlideTransactionScope.setTransactionUpdateSet('');
+		if (typeof g_form != 'undefined')
+			$(g_form.getFormElement()).fire('glidescope:initialized', {gts : GlideTransactionScope});</script><span style="display:none" data-comments="requires"></span><script>NOW.xperf.lastDoctypeEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script>NOW.xperf.dbContextBegin = NOW.xperf.now();</script><script>NOW.xperf.dbContextEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script data-description="MessagesTag">(function() {
+ var messages = new GwtMessage();
+messages.set('Browser response time');
+messages.set('Timing details');
+messages.set('{0} of {1} {2}: {3}');
+messages.set('{0} of {1} Other: {2}');
+messages.set('{0} of {1} {2}: {3}');
+})()</script><script id="glide:page_timing_div" type="application/xml"><button class="pointerhand icon-stop-watch btn btn-icon btn-response-time " type="button" aria-controls="glide:timing_widget" title="Response time(ms): #{RESP}, Network: #{NETW}, server: #{SERV}, browser: #{REND}" aria-label="Response Time"></button><div style="display: none"><div class="timing_span" id="glide:timing_widget">Response time(ms): #{RESP}, Network: #{NETW}, server: #{SERV}, browser: #{REND}<div class="timingGraphDiv"><span class="timing_graph" data-aria-label="Show Timing Breakdown"><span class="timing_network" title="Network #{NETW}ms"></span><span class="timing_server" title="Server #{SERV}ms"></span><span class="timing_browser" title="Browser #{REND}ms"></span></span></div><table class="table table-condensed table-timing-detail" aria-label="Browser timing detail"><thead><tr><th colspan="2">Browser timing detail</th><th>Time</th></tr></thead><tbody id="page_timing_details"></tbody></table></div></div></script><script id="glide:page_timing_details" type="application/xml"><div class="timing_details">#{details}</div></script><script id="glide:page_timing_detail_line" type="application/xml"><tr class="#{has_children}" data-children="#{child_count}" aria-label="#{has_aria_label}"><td colspan="2">#{HTML:name}</td><td>#{ms} ms</td></tr>#{children}</script><script id="glide:page_timing_child_line" type="application/xml"><tr aria-label="#{childAriaLabel}"><td></td><td>#{HTML:name}</td><td>#{ms} ms</td></tr></script><script type="text/javascript">var g_serverTime = parseInt("39") + parseInt("0");
+            var g_logClientViewRoles = "";
+
+			// do not do this for the navigation menu
+            if (window.name != 'gsft_nav') {
+				 addAfterPageLoadedEvent(function() {
+					 if (window.performance)
+						setTimeGraph();
+					 else 
+						firePageTimer();
+				 });
+			 }
+			 
+			function setTimeGraph() {
+				if (window.performance.timing.loadEventEnd > 0)
+			 		firePageTimer();
+			 	else 
+			 		setTimeout(setTimeGraph, 300);
+			 }
+			 
+			function firePageTimer() {
+				 if (window.performance && performance.timing.requestStart != performance.timing.responseStart) {
+				 	var p = performance.timing;
+
+				 	CustomEvent.fire('page_timing', { name: 'SERV', ms: p.responseEnd - p.requestStart});
+				 	CustomEvent.fire('page_timing', { name: 'REND', ms: (p.loadEventEnd - p.responseEnd) });
+				 	CustomEvent.fire('page_timing_network', { name: 'NETW', ms: (p.responseEnd - p.navigationStart) });
+				 } else {
+				    CustomEvent.fire('page_timing', { name: 'SERV', ms: g_serverTime });
+					CustomEvent.fire('page_timing', { name: 'REND', startTime: g_loadTime });
+					CustomEvent.fire('page_timing_network', { name: 'NETW', loadTime: g_loadTime });
+				 }
+
+			 CustomEvent.fire('page_timing_show', { show: ''  });var o = {};
+	      o.types = {};o.types['SECT'] = true;o.types['RLV2'] = true;o.types['UIOL'] = true;o.types['CSOL'] = true;
+	
+	      o.transaction_id = 'cd0adb341b131110102e0fa2604bcb39';
+	      o.table_name = '';
+	      o.form_name = 'session_timeout';
+	      o.view_id = 'Default view';
+	      o.logged_in = false;
+	      o.win = window;
+	      CustomEvent.fire('page_timing_client', o);}
+			 
+            // The following line is used to set the time when we start requesting a new page
+            Event.observe(window, 'beforeunload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+                CustomEvent.fireTop('request_start', document);
+            });
+
+            // simple pages fire this (stats.do, etc.)
+            CustomEvent.observe('simple_page.unload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+            }); 
+
+            // indicate we have completed the request (used by RequestManager.js for cancel widget)
+            addLoadEvent(function() {
+            	CustomEvent.fireTop("request_complete", window.location);
+            });</script><script type="text/javascript" src="/scripts/doctype/z_last_include.jsx?v=03-17-2022_1811"></script></body><script type="text/html" id="popup_template"><div class="popup popup_form" style=""><iframe src="$src" style=""></iframe></div></script></html>
+
+10:36:16.584 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 180; columnNumber: 30; The entity name must immediately follow the '&' in the entity reference.
+10:36:16.585 [print] <!DOCTYPE html><html lang="en" class=" ltr " data-doctype="true" dir="ltr" ontouchend="CustomEvent.fireAll('body_clicked', event);" onclick="CustomEvent.fireAll('body_clicked', event);"><head><title>ServiceNow</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"></meta><meta http-equiv="cache-control" content="public"></meta><script src="/uxasset/externals/service-worker/loader.jsdbx?sysparm_substitute=false"></script><script>var mswDisabledValue = "false";
+			var disabled = mswDisabledValue === 'true' ? true : false;
+			var serviceWorkers = JSON.parse("[{\"scope\":\"/\",\"serviceWorkerUrl\":\"/uxsw/scope/root.js\"},{\"scope\":\"/x\",\"serviceWorkerUrl\":\"/uxsw/scope/now_x.js\"},{\"scope\":\"/now\",\"serviceWorkerUrl\":\"/uxsw/scope/now_x.js\"}]");
+			var SERVICE_WORKER_MANAGER_CONFIG = {disabled, serviceWorkers};
+			if (window.serviceWorkerManager) window.serviceWorkerManager.init(SERVICE_WORKER_MANAGER_CONFIG);</script><meta name="viewport" content="initial-scale=1.0"></meta><script type="text/javascript" data-description="globals population">
+	window.NOW = window.NOW || {};
+	var g_loadTime = new Date();
+	var lastActivity = new Date();
+	var g_lang = 'en';
+	var g_system_lang = 'en';
+	var g_enhanced_activated = 'true';
+	  var g_popup_timeout = parseInt(100);
+	var g_export_warn_threshold = parseInt(10000);
+	  var g_event_handler_ids = {};
+	var g_event_handlers = [];
+	var g_event_handlers_onLoad = [];
+	var g_event_handlers_onSubmit = [];
+	var g_event_handlers_onChange = [];
+	var g_event_handlers_onCellEdit = {};
+	var g_event_handlers_localCache = {};
+	var g_event_handlers_queryTracking = true;
+	var g_user_date_time_format = "yyyy-MM-dd HH:mm:ss";
+	var g_user_date_format = "yyyy-MM-dd";
+	var g_user_decimal_separator = ".";
+	var g_user_grouping_separator = ",";
+	var g_glide_list_separator = ", ";
+	var g_allow_field_dependency_for_templates = ("true" === "true");
+	var g_tz_offset = -28800000;
+	  var g_tz_user_offset = true;
+	var g_first_day_of_week = parseInt(1, 10);
+	var g_date_picker_first_day_of_week = parseInt(0, 10);
+	  var g_full_calendar_edit = true;
+	var g_submitted = false;
+	var g_max_table_length = 80;
+	var g_fontSizePreference = "";
+	var g_fontSize = "10pt";
+	// use to be the sys_property glide.ui.js_error_notify, hard coded for PRB603998
+	var g_jsErrorNotify = "true";
+	var g_cancelPreviousTransaction = true;
+	var g_text_direction = "ltr";
+	var g_glide_list_filter_max_length =  parseInt("0", 10);
+	var g_accessibility = false;
+	var g_accessibility_tooltips = false;
+	var g_accessibility_tooltip_duration = parseInt("10", 10);
+	var g_accessibility_visual_patterns = false;
+	var g_accessibility_screen_reader_table = false;
+	var g_detail_row = false;
+	var g_builddate = "03-17-2022_1811";
+	// default values to be used in absence of user preferences are hard coded below
+	// as well as in keyboardShortcuts.js and keyboard_preference_changer.xml
+	window.g_keyboard_shortcuts = {};
+	window.g_keyboard_shortcuts.allow_in_input_fields = false;
+	window.g_keyboard_shortcuts.enabled = true;
+	window.g_keyboard_shortcuts.global_search = {};
+	window.g_keyboard_shortcuts.global_search.enabled = true;
+	window.g_keyboard_shortcuts.global_search.key_combination = 'ctrl+alt+g';
+	window.g_keyboard_shortcuts.main_frame = {};
+	window.g_keyboard_shortcuts.main_frame.enabled = true;
+	window.g_keyboard_shortcuts.main_frame.key_combination = 'ctrl+alt+p';
+	window.g_keyboard_shortcuts.navigator_toggle = {};
+	window.g_keyboard_shortcuts.navigator_toggle.enabled = true;
+	window.g_keyboard_shortcuts.navigator_toggle.key_combination = 'ctrl+alt+c';
+	window.g_keyboard_shortcuts.navigator_filter = {};
+	window.g_keyboard_shortcuts.navigator_filter.enabled = true;
+	window.g_keyboard_shortcuts.navigator_filter.key_combination = 'ctrl+alt+f';
+	window.g_keyboard_shortcuts.impersonator = {}
+	window.g_keyboard_shortcuts.impersonator.enabled = true;
+	window.g_keyboard_shortcuts.impersonator.key_combination = 'ctrl+alt+i';
+	var g_concourse_onmessage_enforce_same_origin = 'true'.toLowerCase() === 'true';
+	var g_concourse_onmessage_enforce_same_origin_whitelist = '';
+	window.g_load_functions = [];
+	window.g_render_functions = [];
+	window.g_late_load_functions = [];
+	window.g_tiny_url = {};
+	window.g_tiny_url.use_tiny = 'true' === 'true';
+	window.g_tiny_url.min_length = parseInt('1024');
+	
+	
+	var g_ck = '450a97701b131110102e0fa2604bcb6bfbc21ea9e8869469275c6b0030eb7ea61dc3c88e';
+	
+
+	
+	var g_acWaitTime = parseInt(250);
+	
+
+	var g_autoRequest = '';
+
+	try {
+		window.NOW.dateFormat = JSON.parse("{\"timeAgo\": false, \"dateBoth\": false}");
+	} catch (e) {
+		window.NOW.dateFormat = {timeAgo: false, dateBoth: false};
+	}
+
+	window.NOW.dateFormat.dateStringFormat = "yyyy-MM-dd";
+	window.NOW.dateFormat.timeStringFormat = "HH:mm:ss";
+	window.NOW.shortDateFormat = false;
+	window.NOW.listTableWrap = true;
+	window.NOW.compact = false;
+  	window.NOW.templateToggle = false;
+	window.NOW.tabbed = true;
+	window.NOW.permalink = true;
+	window.NOW.useSimpleStorage = true;
+	window.NOW.httpRequestCompressionThreshold = 40000;
+	window.NOW.httpRequestCompressionLevel = -1;
+	window.NOW.httpRequestCompressionMemoryLevel = -1;
+	window.NOW.deferAmbConnection = false;
+	window.NOW.deferredAmbConnectionTimeout = 10000;
+	window.NOW.simpleStorageSynch = "573613301b131110102e0fa2604bcb70";
+	window.NOW.language =  'en';
+	window.NOW.listOpenInAppTab = false;
+	window.NOW.floatingScrollbars = false;
+	
+	window.NOW.user = {};
+	window.NOW.user.preferences = [];
+	window.NOW.user.roles = '';
+	window.NOW.user.allRoles = '';
+	window.NOW.user.userID = '5136503cc611227c0183e96598c4f706';
+	window.NOW.user.departmentID = '';
+	window.NOW.user.firstName = '';
+	window.NOW.user.lastName = 'Guest';
+	window.NOW.user.name = 'guest';
+  	window.NOW.user.isImpersonating = false;
+	window.NOW.batch_glide_ajax_requests = 'true' === 'true';
+	window.NOW.batch_glide_ajax_requests_max_time_in_queue = ~~'50';
+	window.NOW.batch_glide_ajax_disable_time = ~~'1000';
+
+	window.NOW.currency = {};
+	window.NOW.currency.code = 'USD';
+	window.NOW.locale = {};
+	window.NOW.locale.code = 'en_US';
+
+	window.NOW.attachment = {};
+	
+	window.NOW.attachment.overflow_limit =  parseInt('3', 10);
+	window.NOW.isPolarisEnabled = "true";
+	window.NOW.polaris_page_info ={"canUsePolarisCSS":true,"canUsePolarisTemplates":true,"jvar_form_name":"session_timeout"};</script><script data-comment="GlideUser initialization">(function() {
+		 g_render_functions.push(setGlideUser);
+		function setGlideUser() {
+			if (window.g_user || !window.GlideUser)
+		return;
+
+		window.g_user = new GlideUser(NOW.user.name,
+			  NOW.user.firstName,
+			  NOW.user.lastName,
+			  NOW.user.roles,
+			  NOW.user.userID,
+			  NOW.user.departmentID);
+		window.g_user.setRoles(NOW.user.allRoles, true);
+		}
+	})();</script><script data-description="NOW glide web analytics siteid and url">window.snWebaConfig = window.snWebaConfig || {};
+		// glide web analytics config
+		window.snWebaConfig.siteId = "0";
+		window.snWebaConfig.trackerURL = "";
+		window.snWebaConfig.webaScriptPath = "/scripts/piwik-3.1.1/thirdparty/piwik.min.js";
+		window.snWebaConfig.ambClient = (window.g_ambClient) ? window.g_ambClient : ((window.amb)? window.amb.getClient(): "");
+		window.snWebaConfig.subscribed = false;</script><script type="text/javascript" src="/ConditionalFocus.jsdbx?v=03-17-2022_1811&amp;c=7_88"></script><link href="favicon.ico?v=4" rel="shortcut icon"></link><script>// window.performance in Chrome, Firefox, and Internet Explorer 9+ (not Safari)
+				window.NOW.xperf = window.performance || {};
+				if (!NOW.xperf.now) {
+					NOW.xperf.now = function() { return new Date().getTime(); };
+				}
+				NOW.xperf.parseBegin = NOW.xperf.now();
+				NOW.xperf.cssBegin = NOW.xperf.now();</script><link type="text/css" rel="stylesheet" href="/styles/css_includes_doctype_polaris.cssx?v=03-17-2022_1811&amp;c=8e6697301b131110102e0fa2604bcb25&amp;theme=Polaris"></link><script>window.NOW = window.NOW || {};
+		 NOW.isUsingPolaris = true;</script><link type="text/css" rel="stylesheet" href="/styles/polarisberg/css_includes_polarisberg.cssx?v=03-17-2022_1811&amp;c=8e6697301b131110102e0fa2604bcb25&amp;theme=Polaris"></link><link type="text/css" rel="stylesheet" href="/polarisberg_theme_variables.do?c=hnsK6bkZtvJNOUzZMYmfkWgB9Bc="></link><script>NOW.xperf.cssEnd = NOW.xperf.now();
+			NOW.xperf.scriptBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/js_includes_customer.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script>NOW.xperf.scriptEnd = NOW.xperf.now();
+				NOW.xperf.parseEnd = NOW.xperf.now();
+				$j(function() {
+					var x = NOW.xperf;
+					var last = x.lastDoctypeEnd - x.lastDoctypeBegin;
+					if (window.console) {
+						console.log("+-- Parse times");
+						console.log("| CSS parse: " + (x.cssEnd - x.cssBegin));
+						console.log("| JS  doctype: " + (x.scriptEnd - x.scriptBegin));
+						console.log("| JS at end of page: " + last);
+						console.log("+-- All parsing: " + (x.parseEnd - x.parseBegin + last));
+					}
+
+					var ms = Math.round(x.parseEnd - x.parseBegin + last);
+					CustomEvent.fire('page_timing', { name: 'PARS', ms: ms, win: window });
+
+					if (window.performance && performance.timing) {
+						NOW.xperf.z = new Date().getTime();
+						setTimeout(function () {
+						   var x = performance.timing.loadEventEnd - performance.timing.domContentLoadedEventStart;
+						   CustomEvent.fire('page_timing', { name: 'DOMC', ms: x, win: window });
+						   x = performance.timing.loadEventStart - NOW.xperf.z;
+						   CustomEvent.fire('page_timing', { name: 'PROC', ms: x, win: window });
+						}, 250);  // has to be done after the loadEvent ends
+					}
+				})</script><script type="text/javascript" src="/scripts/doctype/js_includes_legacy.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" data-comment="navpage layout preferences, onfocus observation">/**
+	* Every window needs to observe these events.
+	*/
+	if (Prototype.Browser.IE && !isMSIE9) {
+		document.onfocusout = function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); };
+		document.onfocusin = function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); };
+	} else {
+		Event.observe(window, 'blur', function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); });
+		Event.observe(window, 'focus', function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); });
+	}</script><script type="text/javascript">g_swLoadTime = new StopWatch(g_loadTime);
+
+    if (window.CustomEvent){
+        CustomEvent.fireAll("ck_updated", "450a97701b131110102e0fa2604bcb6bfbc21ea9e8869469275c6b0030eb7ea61dc3c88e");
+	    CustomEvent.fireTop("navigation.complete", window);
+	}
+
+    addLoadEvent( function() {
+
+		if (isValidTouchDevice())
+			addTouchScrollClassToBody();
+
+      if (typeof g_ck != 'undefined') {
+        CustomEvent.observe("ck_updated", function(ck) { g_ck = ck; });
+        CustomEvent.fireAll("ck_updated", "450a97701b131110102e0fa2604bcb6bfbc21ea9e8869469275c6b0030eb7ea61dc3c88e");}try {
+              var helpico = getTopWindow().document.getElementById("help_ico");
+
+              if (helpico) {
+                var urlname=window.location.pathname.split("?");
+                var search_str = window.location.search;
+                
+                // if this is a form, extract the record's sys_id...
+                var sys_id_loc = search_str.search(/sys_id=[0-9a-f]{32}/i);
+                var sys_id_str = (sys_id_loc != -1) ? search_str.substr(sys_id_loc, 39) : null;
+                
+                // make the URL to our context help processor...
+                var url_search = "?sysparm_url=" + urlname[0];
+                if (sys_id_loc != -1)
+                   url_search += "&" + sys_id_str;
+
+               	helpico.href="context_help.do" + url_search;                	
+              }
+            } catch (exception) {}
+
+      synchCache();
+      pageLoaded();
+    });
+    
+    function synchCache() {
+      try {
+        var w = getTopWindow();
+        if (w.g_cache_message)
+          w.g_cache_message.stamp("573613301b131110102e0fa2604bcb70");
+  
+        if (w.g_cache_td)
+          w.g_cache_td.stamp("88d99bf41b131110102e0fa2604bcb10");
+      } catch(e) {}
+    }
+
+    function isValidTouchDevice() {
+		var navigator = window.navigator || {};
+		var devices;
+		try {
+			devices = 'iPad,Android'.split(',');
+		} catch(ex) {
+			devices = [];
+		}
+		return devices.some(function(item) {return item.trim() === navigator.platform;});
+	}
+
+	function addTouchScrollClassToBody() {
+		if ('ontouchstart' in window ||
+				(navigator.maxTouchPoints !== 'undefined' && navigator.maxTouchPoints > 0) ||
+				(navigator.msMaxTouchPoints !== 'undefined' && navigator.msMaxTouchPoints > 0)) {
+			if (typeof document.body != undefined) {
+				document.body.classList.add('touch_scroll');
+			}
+		}
+	}
+  </script><!--googleoff: all--><noscript>This site requires JavaScript to be enabled</noscript> <!--googleon: all--><script type="text/javascript" src="/scripts/app.guided_tours/js_guided_tours_includes.jsx?v=03-17-2022_1811"></script></head><body class="                -polaris " data-formName="session_timeout"><span class="sr-only"><div id="html_page_aria_live_polite" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="polite"></div><div id="html_page_aria_live_assertive" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="assertive"></div></span><div class="outputmsg_div"><div id="output_messages" class="outputmsg_container outputmsg_hide"><button type="button" aria-label="Close Messages" id="close-messages-btn" class="btn btn-icon close icon-cross" onclick="GlideUI.get().onCloseMessagesButtonClick(this); return false;"></button><div class="outputmsg_div" aria-live="polite" role="region" data-server-messages="false"></div></div><script>addRenderEvent(function() {CustomEvent.fire('glide_optics_inspect_update_watchfield', '');});
+
+			var accessibilityEnabled = Boolean(false);
+			if (accessibilityEnabled) {
+				$j(function() {
+					$j('#output_messages .btn.btn-icon.close').focus();
+				});
+			}</script><span class="ui_notification" data-type="session_change" data-text="" data-attr-session_domain="global"></span></div><div class="loading-container"><h1 class="loading-message">You are not logged in, or your session has expired. Redirecting to the login page</h1><div class="loading-indicator icon-loading icon-lg"></div></div><script data-comment="loading_page redirect">setTimeout(function() {
+				top.location.href = 'nav_to.do?uri=welcome.do';
+			}, 1500);</script><div style="border:none; visibility:hidden"><form name="sys_personalize" style="display:inline" method="GET" action="slushbucket.do"><input type="hidden" name="sysparm_referring_url" value="session_timeout.do"></input><input type="hidden" name="sysparm_view" value=""></input></form></div><script>(function() {
+        addLateLoadEvent(throwFrameLoaded);
+        // find if padding is needed
+        var pad = (isMSIE6 || isMSIE7 || navigator.userAgent.indexOf('MSIE 8') != -1) ? 1 : 0;
+        function throwFrameLoaded() {
+            try {
+                if (window.parent.CustomEvent) {
+                    // history suggests that if we don't size it down on page load,
+                    // when we check the height it will show the previous page's height
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, 10);
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, getPageHeight());
+                }
+            } catch (e) {}
+        }
+        function throwFrameSized() {
+            try {
+                if (window.parent.CustomEvent) {
+                    // IE9/IE10: resize events will be continuously triggered when there is a difference between document.body.scrollHeight and window.frameElement.height
+                    // to solve this issue, we do not fire event if the height we are going to set is the same as the height obtained after the previous fired event
+                    var previousHeight = window["g_iframe_height"];
+                    var pageHeight = getPageHeight();
+                    if (previousHeight != pageHeight) {
+                        window.parent.CustomEvent.fire('content_frame.resized', self.name, pageHeight);
+                        // IE9/IE10: page height may be changed again after the above firing. So we have to call getPageHeight() to get the new height after the above event has been fired.
+                        window["g_iframe_height"] = getPageHeight();
+                    }
+                }
+            } catch (e) {}
+        }
+
+        function throwFrameSizedSmaller(){
+            try {
+                if (window.parent.CustomEvent) {
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, getPageHeight(true));
+                }
+            } catch (e) {}
+        }
+
+        /**
+         * Simply speaking, scrollHeight and offsetHeight work differently on different browsers
+         * and in and out of quirks mode. IE9 has bugs that do not report them correctly even if
+         * you pick the right one, so we've built some extra controls.
+         */
+        function getPageHeight(resizeSmall) {
+            var popupElement, popupHeight;
+            // first, look for popups
+            var popups = $$('body > div.popup, .modal.in > .modal-dialog');
+            if (popups.length > 0) {
+                popupElement = popups[0];
+                popupHeight = popupElement.scrollHeight + popupElement.offsetTop;
+                //padding is needed or else the bottom border of the popup will be missing
+                return (document.body.scrollHeight > popupHeight ? document.body.scrollHeight : popupHeight) + pad;
+            }
+            // then, look for form elements
+            // use more specific selector to reduce browser response time
+            if ($$('body > div.section_header_content_no_scroll').length > 0) {
+                var mainContentHeight = $$('body > div.section_header_content_no_scroll')[0].scrollHeight;
+                
+                // we use the form_title class to distinguish between UI15+ where the form title actually adds to the height
+                var header = $$('body > div.section_header_div_no_scroll.form_title');
+                var headerHeight = header.length == 0 ? 0 : header[0].getHeight();
+                return mainContentHeight + headerHeight;
+            }
+            // then, look for touch scroll elements *CALGARY and forward*
+            if ($$('body > .touch_scroll').length > 0)
+                return $$('body > .touch_scroll')[0].scrollHeight;
+            // then, get the normal page height
+            if (document.body.scrollHeight || document.documentElement.scrollHeight) {
+                if (!resizeSmall){
+                    if(document.body.scrollHeight > document.documentElement.scrollHeight)
+                        return document.body.scrollHeight;
+                    else
+                        return document.documentElement.scrollHeight;
+                }
+                else{
+                    if(document.documentElement.scrollHeight > document.body.scrollHeight)
+                        return document.body.scrollHeight;
+                    else
+                        return document.documentElement.scrollHeight;
+                }
+            }
+            return document.body.offsetHeight;
+        }
+        // start observing only after page has been loaded to avoid handling large number of resize events especially on IE 7 and IE 8
+        addAfterPageLoadedEvent(function() {
+            CustomEvent.observe('frame.resized', throwFrameSized);
+            CustomEvent.observe('frame.resized.smaller', throwFrameSizedSmaller);
+            CustomEvent.observe('partial.page.reload', throwFrameLoaded); // specifically, reports and lists that cause the page to shrink
+            Event.observe(document.onresize ? document : window, "resize", throwFrameSized);
+            _frameChanged();
+        });
+    })();</script><span style="display:none" data-comments="js_includes_last_doctype"></span><script>NOW.xperf.lastDoctypeBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_last_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/heisenberg/heisenberg_all.jsx?v=03-17-2022_1811"></script><script type="text/javascript" src="/scripts/js_includes_list_edit_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/transaction_scope_includes.jsx?v=03-17-2022_1811"></script><script>if ('') 
+			GlideTransactionScope.setTransactionScope('');
+		if ('') 
+			GlideTransactionScope.setRecordScope('');
+		if ('') 
+			GlideTransactionScope.setTransactionUpdateSet('');
+		if (typeof g_form != 'undefined')
+			$(g_form.getFormElement()).fire('glidescope:initialized', {gts : GlideTransactionScope});</script><span style="display:none" data-comments="requires"></span><script>NOW.xperf.lastDoctypeEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script>NOW.xperf.dbContextBegin = NOW.xperf.now();</script><script>NOW.xperf.dbContextEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script data-description="MessagesTag">(function() {
+ var messages = new GwtMessage();
+messages.set('Browser response time');
+messages.set('Timing details');
+messages.set('{0} of {1} {2}: {3}');
+messages.set('{0} of {1} Other: {2}');
+messages.set('{0} of {1} {2}: {3}');
+})()</script><script id="glide:page_timing_div" type="application/xml"><button class="pointerhand icon-stop-watch btn btn-icon btn-response-time " type="button" aria-controls="glide:timing_widget" title="Response time(ms): #{RESP}, Network: #{NETW}, server: #{SERV}, browser: #{REND}" aria-label="Response Time"></button><div style="display: none"><div class="timing_span" id="glide:timing_widget">Response time(ms): #{RESP}, Network: #{NETW}, server: #{SERV}, browser: #{REND}<div class="timingGraphDiv"><span class="timing_graph" data-aria-label="Show Timing Breakdown"><span class="timing_network" title="Network #{NETW}ms"></span><span class="timing_server" title="Server #{SERV}ms"></span><span class="timing_browser" title="Browser #{REND}ms"></span></span></div><table class="table table-condensed table-timing-detail" aria-label="Browser timing detail"><thead><tr><th colspan="2">Browser timing detail</th><th>Time</th></tr></thead><tbody id="page_timing_details"></tbody></table></div></div></script><script id="glide:page_timing_details" type="application/xml"><div class="timing_details">#{details}</div></script><script id="glide:page_timing_detail_line" type="application/xml"><tr class="#{has_children}" data-children="#{child_count}" aria-label="#{has_aria_label}"><td colspan="2">#{HTML:name}</td><td>#{ms} ms</td></tr>#{children}</script><script id="glide:page_timing_child_line" type="application/xml"><tr aria-label="#{childAriaLabel}"><td></td><td>#{HTML:name}</td><td>#{ms} ms</td></tr></script><script type="text/javascript">var g_serverTime = parseInt("39") + parseInt("0");
+            var g_logClientViewRoles = "";
+
+			// do not do this for the navigation menu
+            if (window.name != 'gsft_nav') {
+				 addAfterPageLoadedEvent(function() {
+					 if (window.performance)
+						setTimeGraph();
+					 else 
+						firePageTimer();
+				 });
+			 }
+			 
+			function setTimeGraph() {
+				if (window.performance.timing.loadEventEnd > 0)
+			 		firePageTimer();
+			 	else 
+			 		setTimeout(setTimeGraph, 300);
+			 }
+			 
+			function firePageTimer() {
+				 if (window.performance && performance.timing.requestStart != performance.timing.responseStart) {
+				 	var p = performance.timing;
+
+				 	CustomEvent.fire('page_timing', { name: 'SERV', ms: p.responseEnd - p.requestStart});
+				 	CustomEvent.fire('page_timing', { name: 'REND', ms: (p.loadEventEnd - p.responseEnd) });
+				 	CustomEvent.fire('page_timing_network', { name: 'NETW', ms: (p.responseEnd - p.navigationStart) });
+				 } else {
+				    CustomEvent.fire('page_timing', { name: 'SERV', ms: g_serverTime });
+					CustomEvent.fire('page_timing', { name: 'REND', startTime: g_loadTime });
+					CustomEvent.fire('page_timing_network', { name: 'NETW', loadTime: g_loadTime });
+				 }
+
+			 CustomEvent.fire('page_timing_show', { show: ''  });var o = {};
+	      o.types = {};o.types['SECT'] = true;o.types['RLV2'] = true;o.types['UIOL'] = true;o.types['CSOL'] = true;
+	
+	      o.transaction_id = 'cd0adb341b131110102e0fa2604bcb39';
+	      o.table_name = '';
+	      o.form_name = 'session_timeout';
+	      o.view_id = 'Default view';
+	      o.logged_in = false;
+	      o.win = window;
+	      CustomEvent.fire('page_timing_client', o);}
+			 
+            // The following line is used to set the time when we start requesting a new page
+            Event.observe(window, 'beforeunload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+                CustomEvent.fireTop('request_start', document);
+            });
+
+            // simple pages fire this (stats.do, etc.)
+            CustomEvent.observe('simple_page.unload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+            }); 
+
+            // indicate we have completed the request (used by RequestManager.js for cancel widget)
+            addLoadEvent(function() {
+            	CustomEvent.fireTop("request_complete", window.location);
+            });</script><script type="text/javascript" src="/scripts/doctype/z_last_include.jsx?v=03-17-2022_1811"></script></body><script type="text/html" id="popup_template"><div class="popup popup_form" style=""><iframe src="$src" style=""></iframe></div></script></html>
+10:36:16.593 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:36:16.608 request:
+1 > POST https://dev134534.service-now.com/com/api/now/table/incident
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic YWRtaW46OEUhdXYxeW5eRlBY
+1 > Connection: Keep-Alive
+1 > Content-Length: 57
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dev134534.service-now.com
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_333)
+{"short_description":"This is created from karate data2"}
+
+10:36:18.089 response time in milliseconds: 1480.36
+1 < 302
+1 < Content-Length: 0
+1 < Date: Sat, 19 Nov 2022 05:06:16 GMT
+1 < Location: /session_timeout.do
+1 < Server: ServiceNow
+1 < Server-Timing: sem_wait;dur=0, sesh_wait;dur=0
+1 < Set-Cookie: [JSESSIONID=FA1FB972416AD6DB6CC7AA83FCE7DD84; Path=/; HttpOnly; SameSite=None; Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; SameSite=None; Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; SameSite=None; Secure, glide_user_route=glide.423c986a8aa1673cf90112f2f88ba9f8; Max-Age=2147483647; Expires=Thu, 07-Dec-2090 08:20:24 GMT; Path=/; HttpOnly; SameSite=None; Secure, BIGipServerpool_dev134534=730115850.63040.0000; path=/; Httponly; Secure; SameSite=None; Secure]
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Is-Logged-In: false
+1 < X-Transaction-ID: 690a53341b13
+
+10:36:18.091 request:
+2 > GET https://dev134534.service-now.com/com/api/now/table/incident
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Basic YWRtaW46OEUhdXYxeW5eRlBY
+2 > Connection: Keep-Alive
+2 > Content-Type: application/json; charset=UTF-8
+2 > Cookie: BIGipServerpool_dev134534=730115850.63040.0000; JSESSIONID=FA1FB972416AD6DB6CC7AA83FCE7DD84; glide_user_route=glide.423c986a8aa1673cf90112f2f88ba9f8
+2 > Host: dev134534.service-now.com
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_333)
+
+10:36:18.699 response time in milliseconds: 303.58
+2 < 200
+2 < Cache-Control: no-cache,no-store,must-revalidate,max-age=-1
+2 < Content-Type: text/html;charset=UTF-8
+2 < Date: Sat, 19 Nov 2022 05:06:17 GMT
+2 < Expires: 0
+2 < Pragma: no-store,no-cache
+2 < Referrer-Policy: same-origin
+2 < Server: ServiceNow
+2 < Server-Timing: wall;dur=30, sem_wait;dur=0, sesh_wait;dur=0, app_cpu;dur=20, db;dur=1, acl;dur=1, br;dur=null, ui_action;dur=0, cache_build;dur=0, scripting;dur=1
+2 < Set-Cookie: [glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; SameSite=None; Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; SameSite=None; Secure]
+2 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Is-Logged-In: false
+2 < X-Transaction-ID: 610adb701b13
+<!DOCTYPE html><html lang="en" class=" ltr " data-doctype="true" dir="ltr" ontouchend="CustomEvent.fireAll('body_clicked', event);" onclick="CustomEvent.fireAll('body_clicked', event);"><head><title>ServiceNow</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"></meta><meta http-equiv="cache-control" content="public"></meta><script src="/uxasset/externals/service-worker/loader.jsdbx?sysparm_substitute=false"></script><script>var mswDisabledValue = "false";
+			var disabled = mswDisabledValue === 'true' ? true : false;
+			var serviceWorkers = JSON.parse("[{\"scope\":\"/\",\"serviceWorkerUrl\":\"/uxsw/scope/root.js\"},{\"scope\":\"/x\",\"serviceWorkerUrl\":\"/uxsw/scope/now_x.js\"},{\"scope\":\"/now\",\"serviceWorkerUrl\":\"/uxsw/scope/now_x.js\"}]");
+			var SERVICE_WORKER_MANAGER_CONFIG = {disabled, serviceWorkers};
+			if (window.serviceWorkerManager) window.serviceWorkerManager.init(SERVICE_WORKER_MANAGER_CONFIG);</script><meta name="viewport" content="initial-scale=1.0"></meta><script type="text/javascript" data-description="globals population">
+	window.NOW = window.NOW || {};
+	var g_loadTime = new Date();
+	var lastActivity = new Date();
+	var g_lang = 'en';
+	var g_system_lang = 'en';
+	var g_enhanced_activated = 'true';
+	  var g_popup_timeout = parseInt(100);
+	var g_export_warn_threshold = parseInt(10000);
+	  var g_event_handler_ids = {};
+	var g_event_handlers = [];
+	var g_event_handlers_onLoad = [];
+	var g_event_handlers_onSubmit = [];
+	var g_event_handlers_onChange = [];
+	var g_event_handlers_onCellEdit = {};
+	var g_event_handlers_localCache = {};
+	var g_event_handlers_queryTracking = true;
+	var g_user_date_time_format = "yyyy-MM-dd HH:mm:ss";
+	var g_user_date_format = "yyyy-MM-dd";
+	var g_user_decimal_separator = ".";
+	var g_user_grouping_separator = ",";
+	var g_glide_list_separator = ", ";
+	var g_allow_field_dependency_for_templates = ("true" === "true");
+	var g_tz_offset = -28800000;
+	  var g_tz_user_offset = true;
+	var g_first_day_of_week = parseInt(1, 10);
+	var g_date_picker_first_day_of_week = parseInt(0, 10);
+	  var g_full_calendar_edit = true;
+	var g_submitted = false;
+	var g_max_table_length = 80;
+	var g_fontSizePreference = "";
+	var g_fontSize = "10pt";
+	// use to be the sys_property glide.ui.js_error_notify, hard coded for PRB603998
+	var g_jsErrorNotify = "true";
+	var g_cancelPreviousTransaction = true;
+	var g_text_direction = "ltr";
+	var g_glide_list_filter_max_length =  parseInt("0", 10);
+	var g_accessibility = false;
+	var g_accessibility_tooltips = false;
+	var g_accessibility_tooltip_duration = parseInt("10", 10);
+	var g_accessibility_visual_patterns = false;
+	var g_accessibility_screen_reader_table = false;
+	var g_detail_row = false;
+	var g_builddate = "03-17-2022_1811";
+	// default values to be used in absence of user preferences are hard coded below
+	// as well as in keyboardShortcuts.js and keyboard_preference_changer.xml
+	window.g_keyboard_shortcuts = {};
+	window.g_keyboard_shortcuts.allow_in_input_fields = false;
+	window.g_keyboard_shortcuts.enabled = true;
+	window.g_keyboard_shortcuts.global_search = {};
+	window.g_keyboard_shortcuts.global_search.enabled = true;
+	window.g_keyboard_shortcuts.global_search.key_combination = 'ctrl+alt+g';
+	window.g_keyboard_shortcuts.main_frame = {};
+	window.g_keyboard_shortcuts.main_frame.enabled = true;
+	window.g_keyboard_shortcuts.main_frame.key_combination = 'ctrl+alt+p';
+	window.g_keyboard_shortcuts.navigator_toggle = {};
+	window.g_keyboard_shortcuts.navigator_toggle.enabled = true;
+	window.g_keyboard_shortcuts.navigator_toggle.key_combination = 'ctrl+alt+c';
+	window.g_keyboard_shortcuts.navigator_filter = {};
+	window.g_keyboard_shortcuts.navigator_filter.enabled = true;
+	window.g_keyboard_shortcuts.navigator_filter.key_combination = 'ctrl+alt+f';
+	window.g_keyboard_shortcuts.impersonator = {}
+	window.g_keyboard_shortcuts.impersonator.enabled = true;
+	window.g_keyboard_shortcuts.impersonator.key_combination = 'ctrl+alt+i';
+	var g_concourse_onmessage_enforce_same_origin = 'true'.toLowerCase() === 'true';
+	var g_concourse_onmessage_enforce_same_origin_whitelist = '';
+	window.g_load_functions = [];
+	window.g_render_functions = [];
+	window.g_late_load_functions = [];
+	window.g_tiny_url = {};
+	window.g_tiny_url.use_tiny = 'true' === 'true';
+	window.g_tiny_url.min_length = parseInt('1024');
+	
+	
+	var g_ck = 'a50a53341b131110102e0fa2604bcb069788a4e9006b9653d55c940fff51339eac1c49e0';
+	
+
+	
+	var g_acWaitTime = parseInt(250);
+	
+
+	var g_autoRequest = '';
+
+	try {
+		window.NOW.dateFormat = JSON.parse("{\"timeAgo\": false, \"dateBoth\": false}");
+	} catch (e) {
+		window.NOW.dateFormat = {timeAgo: false, dateBoth: false};
+	}
+
+	window.NOW.dateFormat.dateStringFormat = "yyyy-MM-dd";
+	window.NOW.dateFormat.timeStringFormat = "HH:mm:ss";
+	window.NOW.shortDateFormat = false;
+	window.NOW.listTableWrap = true;
+	window.NOW.compact = false;
+  	window.NOW.templateToggle = false;
+	window.NOW.tabbed = true;
+	window.NOW.permalink = true;
+	window.NOW.useSimpleStorage = true;
+	window.NOW.httpRequestCompressionThreshold = 40000;
+	window.NOW.httpRequestCompressionLevel = -1;
+	window.NOW.httpRequestCompressionMemoryLevel = -1;
+	window.NOW.deferAmbConnection = false;
+	window.NOW.deferredAmbConnectionTimeout = 10000;
+	window.NOW.simpleStorageSynch = "573613301b131110102e0fa2604bcb70";
+	window.NOW.language =  'en';
+	window.NOW.listOpenInAppTab = false;
+	window.NOW.floatingScrollbars = false;
+	
+	window.NOW.user = {};
+	window.NOW.user.preferences = [];
+	window.NOW.user.roles = '';
+	window.NOW.user.allRoles = '';
+	window.NOW.user.userID = '5136503cc611227c0183e96598c4f706';
+	window.NOW.user.departmentID = '';
+	window.NOW.user.firstName = '';
+	window.NOW.user.lastName = 'Guest';
+	window.NOW.user.name = 'guest';
+  	window.NOW.user.isImpersonating = false;
+	window.NOW.batch_glide_ajax_requests = 'true' === 'true';
+	window.NOW.batch_glide_ajax_requests_max_time_in_queue = ~~'50';
+	window.NOW.batch_glide_ajax_disable_time = ~~'1000';
+
+	window.NOW.currency = {};
+	window.NOW.currency.code = 'USD';
+	window.NOW.locale = {};
+	window.NOW.locale.code = 'en_US';
+
+	window.NOW.attachment = {};
+	
+	window.NOW.attachment.overflow_limit =  parseInt('3', 10);
+	window.NOW.isPolarisEnabled = "true";
+	window.NOW.polaris_page_info ={"canUsePolarisCSS":true,"canUsePolarisTemplates":true,"jvar_form_name":"session_timeout"};</script><script data-comment="GlideUser initialization">(function() {
+		 g_render_functions.push(setGlideUser);
+		function setGlideUser() {
+			if (window.g_user || !window.GlideUser)
+		return;
+
+		window.g_user = new GlideUser(NOW.user.name,
+			  NOW.user.firstName,
+			  NOW.user.lastName,
+			  NOW.user.roles,
+			  NOW.user.userID,
+			  NOW.user.departmentID);
+		window.g_user.setRoles(NOW.user.allRoles, true);
+		}
+	})();</script><script data-description="NOW glide web analytics siteid and url">window.snWebaConfig = window.snWebaConfig || {};
+		// glide web analytics config
+		window.snWebaConfig.siteId = "0";
+		window.snWebaConfig.trackerURL = "";
+		window.snWebaConfig.webaScriptPath = "/scripts/piwik-3.1.1/thirdparty/piwik.min.js";
+		window.snWebaConfig.ambClient = (window.g_ambClient) ? window.g_ambClient : ((window.amb)? window.amb.getClient(): "");
+		window.snWebaConfig.subscribed = false;</script><script type="text/javascript" src="/ConditionalFocus.jsdbx?v=03-17-2022_1811&amp;c=7_88"></script><link href="favicon.ico?v=4" rel="shortcut icon"></link><script>// window.performance in Chrome, Firefox, and Internet Explorer 9+ (not Safari)
+				window.NOW.xperf = window.performance || {};
+				if (!NOW.xperf.now) {
+					NOW.xperf.now = function() { return new Date().getTime(); };
+				}
+				NOW.xperf.parseBegin = NOW.xperf.now();
+				NOW.xperf.cssBegin = NOW.xperf.now();</script><link type="text/css" rel="stylesheet" href="/styles/css_includes_doctype_polaris.cssx?v=03-17-2022_1811&amp;c=8e6697301b131110102e0fa2604bcb25&amp;theme=Polaris"></link><script>window.NOW = window.NOW || {};
+		 NOW.isUsingPolaris = true;</script><link type="text/css" rel="stylesheet" href="/styles/polarisberg/css_includes_polarisberg.cssx?v=03-17-2022_1811&amp;c=8e6697301b131110102e0fa2604bcb25&amp;theme=Polaris"></link><link type="text/css" rel="stylesheet" href="/polarisberg_theme_variables.do?c=hnsK6bkZtvJNOUzZMYmfkWgB9Bc="></link><script>NOW.xperf.cssEnd = NOW.xperf.now();
+			NOW.xperf.scriptBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/js_includes_customer.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script>NOW.xperf.scriptEnd = NOW.xperf.now();
+				NOW.xperf.parseEnd = NOW.xperf.now();
+				$j(function() {
+					var x = NOW.xperf;
+					var last = x.lastDoctypeEnd - x.lastDoctypeBegin;
+					if (window.console) {
+						console.log("+-- Parse times");
+						console.log("| CSS parse: " + (x.cssEnd - x.cssBegin));
+						console.log("| JS  doctype: " + (x.scriptEnd - x.scriptBegin));
+						console.log("| JS at end of page: " + last);
+						console.log("+-- All parsing: " + (x.parseEnd - x.parseBegin + last));
+					}
+
+					var ms = Math.round(x.parseEnd - x.parseBegin + last);
+					CustomEvent.fire('page_timing', { name: 'PARS', ms: ms, win: window });
+
+					if (window.performance && performance.timing) {
+						NOW.xperf.z = new Date().getTime();
+						setTimeout(function () {
+						   var x = performance.timing.loadEventEnd - performance.timing.domContentLoadedEventStart;
+						   CustomEvent.fire('page_timing', { name: 'DOMC', ms: x, win: window });
+						   x = performance.timing.loadEventStart - NOW.xperf.z;
+						   CustomEvent.fire('page_timing', { name: 'PROC', ms: x, win: window });
+						}, 250);  // has to be done after the loadEvent ends
+					}
+				})</script><script type="text/javascript" src="/scripts/doctype/js_includes_legacy.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" data-comment="navpage layout preferences, onfocus observation">/**
+	* Every window needs to observe these events.
+	*/
+	if (Prototype.Browser.IE && !isMSIE9) {
+		document.onfocusout = function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); };
+		document.onfocusin = function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); };
+	} else {
+		Event.observe(window, 'blur', function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); });
+		Event.observe(window, 'focus', function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); });
+	}</script><script type="text/javascript">g_swLoadTime = new StopWatch(g_loadTime);
+
+    if (window.CustomEvent){
+        CustomEvent.fireAll("ck_updated", "a50a53341b131110102e0fa2604bcb069788a4e9006b9653d55c940fff51339eac1c49e0");
+	    CustomEvent.fireTop("navigation.complete", window);
+	}
+
+    addLoadEvent( function() {
+
+		if (isValidTouchDevice())
+			addTouchScrollClassToBody();
+
+      if (typeof g_ck != 'undefined') {
+        CustomEvent.observe("ck_updated", function(ck) { g_ck = ck; });
+        CustomEvent.fireAll("ck_updated", "a50a53341b131110102e0fa2604bcb069788a4e9006b9653d55c940fff51339eac1c49e0");}try {
+              var helpico = getTopWindow().document.getElementById("help_ico");
+
+              if (helpico) {
+                var urlname=window.location.pathname.split("?");
+                var search_str = window.location.search;
+                
+                // if this is a form, extract the record's sys_id...
+                var sys_id_loc = search_str.search(/sys_id=[0-9a-f]{32}/i);
+                var sys_id_str = (sys_id_loc != -1) ? search_str.substr(sys_id_loc, 39) : null;
+                
+                // make the URL to our context help processor...
+                var url_search = "?sysparm_url=" + urlname[0];
+                if (sys_id_loc != -1)
+                   url_search += "&" + sys_id_str;
+
+               	helpico.href="context_help.do" + url_search;                	
+              }
+            } catch (exception) {}
+
+      synchCache();
+      pageLoaded();
+    });
+    
+    function synchCache() {
+      try {
+        var w = getTopWindow();
+        if (w.g_cache_message)
+          w.g_cache_message.stamp("573613301b131110102e0fa2604bcb70");
+  
+        if (w.g_cache_td)
+          w.g_cache_td.stamp("88d99bf41b131110102e0fa2604bcb10");
+      } catch(e) {}
+    }
+
+    function isValidTouchDevice() {
+		var navigator = window.navigator || {};
+		var devices;
+		try {
+			devices = 'iPad,Android'.split(',');
+		} catch(ex) {
+			devices = [];
+		}
+		return devices.some(function(item) {return item.trim() === navigator.platform;});
+	}
+
+	function addTouchScrollClassToBody() {
+		if ('ontouchstart' in window ||
+				(navigator.maxTouchPoints !== 'undefined' && navigator.maxTouchPoints > 0) ||
+				(navigator.msMaxTouchPoints !== 'undefined' && navigator.msMaxTouchPoints > 0)) {
+			if (typeof document.body != undefined) {
+				document.body.classList.add('touch_scroll');
+			}
+		}
+	}
+  </script><!--googleoff: all--><noscript>This site requires JavaScript to be enabled</noscript> <!--googleon: all--><script type="text/javascript" src="/scripts/app.guided_tours/js_guided_tours_includes.jsx?v=03-17-2022_1811"></script></head><body class="                -polaris " data-formName="session_timeout"><span class="sr-only"><div id="html_page_aria_live_polite" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="polite"></div><div id="html_page_aria_live_assertive" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="assertive"></div></span><div class="outputmsg_div"><div id="output_messages" class="outputmsg_container outputmsg_hide"><button type="button" aria-label="Close Messages" id="close-messages-btn" class="btn btn-icon close icon-cross" onclick="GlideUI.get().onCloseMessagesButtonClick(this); return false;"></button><div class="outputmsg_div" aria-live="polite" role="region" data-server-messages="false"></div></div><script>addRenderEvent(function() {CustomEvent.fire('glide_optics_inspect_update_watchfield', '');});
+
+			var accessibilityEnabled = Boolean(false);
+			if (accessibilityEnabled) {
+				$j(function() {
+					$j('#output_messages .btn.btn-icon.close').focus();
+				});
+			}</script><span class="ui_notification" data-type="session_change" data-text="" data-attr-session_domain="global"></span></div><div class="loading-container"><h1 class="loading-message">You are not logged in, or your session has expired. Redirecting to the login page</h1><div class="loading-indicator icon-loading icon-lg"></div></div><script data-comment="loading_page redirect">setTimeout(function() {
+				top.location.href = 'nav_to.do?uri=welcome.do';
+			}, 1500);</script><div style="border:none; visibility:hidden"><form name="sys_personalize" style="display:inline" method="GET" action="slushbucket.do"><input type="hidden" name="sysparm_referring_url" value="session_timeout.do"></input><input type="hidden" name="sysparm_view" value=""></input></form></div><script>(function() {
+        addLateLoadEvent(throwFrameLoaded);
+        // find if padding is needed
+        var pad = (isMSIE6 || isMSIE7 || navigator.userAgent.indexOf('MSIE 8') != -1) ? 1 : 0;
+        function throwFrameLoaded() {
+            try {
+                if (window.parent.CustomEvent) {
+                    // history suggests that if we don't size it down on page load,
+                    // when we check the height it will show the previous page's height
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, 10);
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, getPageHeight());
+                }
+            } catch (e) {}
+        }
+        function throwFrameSized() {
+            try {
+                if (window.parent.CustomEvent) {
+                    // IE9/IE10: resize events will be continuously triggered when there is a difference between document.body.scrollHeight and window.frameElement.height
+                    // to solve this issue, we do not fire event if the height we are going to set is the same as the height obtained after the previous fired event
+                    var previousHeight = window["g_iframe_height"];
+                    var pageHeight = getPageHeight();
+                    if (previousHeight != pageHeight) {
+                        window.parent.CustomEvent.fire('content_frame.resized', self.name, pageHeight);
+                        // IE9/IE10: page height may be changed again after the above firing. So we have to call getPageHeight() to get the new height after the above event has been fired.
+                        window["g_iframe_height"] = getPageHeight();
+                    }
+                }
+            } catch (e) {}
+        }
+
+        function throwFrameSizedSmaller(){
+            try {
+                if (window.parent.CustomEvent) {
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, getPageHeight(true));
+                }
+            } catch (e) {}
+        }
+
+        /**
+         * Simply speaking, scrollHeight and offsetHeight work differently on different browsers
+         * and in and out of quirks mode. IE9 has bugs that do not report them correctly even if
+         * you pick the right one, so we've built some extra controls.
+         */
+        function getPageHeight(resizeSmall) {
+            var popupElement, popupHeight;
+            // first, look for popups
+            var popups = $$('body > div.popup, .modal.in > .modal-dialog');
+            if (popups.length > 0) {
+                popupElement = popups[0];
+                popupHeight = popupElement.scrollHeight + popupElement.offsetTop;
+                //padding is needed or else the bottom border of the popup will be missing
+                return (document.body.scrollHeight > popupHeight ? document.body.scrollHeight : popupHeight) + pad;
+            }
+            // then, look for form elements
+            // use more specific selector to reduce browser response time
+            if ($$('body > div.section_header_content_no_scroll').length > 0) {
+                var mainContentHeight = $$('body > div.section_header_content_no_scroll')[0].scrollHeight;
+                
+                // we use the form_title class to distinguish between UI15+ where the form title actually adds to the height
+                var header = $$('body > div.section_header_div_no_scroll.form_title');
+                var headerHeight = header.length == 0 ? 0 : header[0].getHeight();
+                return mainContentHeight + headerHeight;
+            }
+            // then, look for touch scroll elements *CALGARY and forward*
+            if ($$('body > .touch_scroll').length > 0)
+                return $$('body > .touch_scroll')[0].scrollHeight;
+            // then, get the normal page height
+            if (document.body.scrollHeight || document.documentElement.scrollHeight) {
+                if (!resizeSmall){
+                    if(document.body.scrollHeight > document.documentElement.scrollHeight)
+                        return document.body.scrollHeight;
+                    else
+                        return document.documentElement.scrollHeight;
+                }
+                else{
+                    if(document.documentElement.scrollHeight > document.body.scrollHeight)
+                        return document.body.scrollHeight;
+                    else
+                        return document.documentElement.scrollHeight;
+                }
+            }
+            return document.body.offsetHeight;
+        }
+        // start observing only after page has been loaded to avoid handling large number of resize events especially on IE 7 and IE 8
+        addAfterPageLoadedEvent(function() {
+            CustomEvent.observe('frame.resized', throwFrameSized);
+            CustomEvent.observe('frame.resized.smaller', throwFrameSizedSmaller);
+            CustomEvent.observe('partial.page.reload', throwFrameLoaded); // specifically, reports and lists that cause the page to shrink
+            Event.observe(document.onresize ? document : window, "resize", throwFrameSized);
+            _frameChanged();
+        });
+    })();</script><span style="display:none" data-comments="js_includes_last_doctype"></span><script>NOW.xperf.lastDoctypeBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_last_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/heisenberg/heisenberg_all.jsx?v=03-17-2022_1811"></script><script type="text/javascript" src="/scripts/js_includes_list_edit_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/transaction_scope_includes.jsx?v=03-17-2022_1811"></script><script>if ('') 
+			GlideTransactionScope.setTransactionScope('');
+		if ('') 
+			GlideTransactionScope.setRecordScope('');
+		if ('') 
+			GlideTransactionScope.setTransactionUpdateSet('');
+		if (typeof g_form != 'undefined')
+			$(g_form.getFormElement()).fire('glidescope:initialized', {gts : GlideTransactionScope});</script><span style="display:none" data-comments="requires"></span><script>NOW.xperf.lastDoctypeEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script>NOW.xperf.dbContextBegin = NOW.xperf.now();</script><script>NOW.xperf.dbContextEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script data-description="MessagesTag">(function() {
+ var messages = new GwtMessage();
+messages.set('Browser response time');
+messages.set('Timing details');
+messages.set('{0} of {1} {2}: {3}');
+messages.set('{0} of {1} Other: {2}');
+messages.set('{0} of {1} {2}: {3}');
+})()</script><script id="glide:page_timing_div" type="application/xml"><button class="pointerhand icon-stop-watch btn btn-icon btn-response-time " type="button" aria-controls="glide:timing_widget" title="Response time(ms): #{RESP}, Network: #{NETW}, server: #{SERV}, browser: #{REND}" aria-label="Response Time"></button><div style="display: none"><div class="timing_span" id="glide:timing_widget">Response time(ms): #{RESP}, Network: #{NETW}, server: #{SERV}, browser: #{REND}<div class="timingGraphDiv"><span class="timing_graph" data-aria-label="Show Timing Breakdown"><span class="timing_network" title="Network #{NETW}ms"></span><span class="timing_server" title="Server #{SERV}ms"></span><span class="timing_browser" title="Browser #{REND}ms"></span></span></div><table class="table table-condensed table-timing-detail" aria-label="Browser timing detail"><thead><tr><th colspan="2">Browser timing detail</th><th>Time</th></tr></thead><tbody id="page_timing_details"></tbody></table></div></div></script><script id="glide:page_timing_details" type="application/xml"><div class="timing_details">#{details}</div></script><script id="glide:page_timing_detail_line" type="application/xml"><tr class="#{has_children}" data-children="#{child_count}" aria-label="#{has_aria_label}"><td colspan="2">#{HTML:name}</td><td>#{ms} ms</td></tr>#{children}</script><script id="glide:page_timing_child_line" type="application/xml"><tr aria-label="#{childAriaLabel}"><td></td><td>#{HTML:name}</td><td>#{ms} ms</td></tr></script><script type="text/javascript">var g_serverTime = parseInt("30") + parseInt("0");
+            var g_logClientViewRoles = "";
+
+			// do not do this for the navigation menu
+            if (window.name != 'gsft_nav') {
+				 addAfterPageLoadedEvent(function() {
+					 if (window.performance)
+						setTimeGraph();
+					 else 
+						firePageTimer();
+				 });
+			 }
+			 
+			function setTimeGraph() {
+				if (window.performance.timing.loadEventEnd > 0)
+			 		firePageTimer();
+			 	else 
+			 		setTimeout(setTimeGraph, 300);
+			 }
+			 
+			function firePageTimer() {
+				 if (window.performance && performance.timing.requestStart != performance.timing.responseStart) {
+				 	var p = performance.timing;
+
+				 	CustomEvent.fire('page_timing', { name: 'SERV', ms: p.responseEnd - p.requestStart});
+				 	CustomEvent.fire('page_timing', { name: 'REND', ms: (p.loadEventEnd - p.responseEnd) });
+				 	CustomEvent.fire('page_timing_network', { name: 'NETW', ms: (p.responseEnd - p.navigationStart) });
+				 } else {
+				    CustomEvent.fire('page_timing', { name: 'SERV', ms: g_serverTime });
+					CustomEvent.fire('page_timing', { name: 'REND', startTime: g_loadTime });
+					CustomEvent.fire('page_timing_network', { name: 'NETW', loadTime: g_loadTime });
+				 }
+
+			 CustomEvent.fire('page_timing_show', { show: ''  });var o = {};
+	      o.types = {};o.types['SECT'] = true;o.types['RLV2'] = true;o.types['UIOL'] = true;o.types['CSOL'] = true;
+	
+	      o.transaction_id = '610adb701b131110102e0fa2604bcbe7';
+	      o.table_name = '';
+	      o.form_name = 'session_timeout';
+	      o.view_id = 'Default view';
+	      o.logged_in = false;
+	      o.win = window;
+	      CustomEvent.fire('page_timing_client', o);}
+			 
+            // The following line is used to set the time when we start requesting a new page
+            Event.observe(window, 'beforeunload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+                CustomEvent.fireTop('request_start', document);
+            });
+
+            // simple pages fire this (stats.do, etc.)
+            CustomEvent.observe('simple_page.unload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+            }); 
+
+            // indicate we have completed the request (used by RequestManager.js for cancel widget)
+            addLoadEvent(function() {
+            	CustomEvent.fireTop("request_complete", window.location);
+            });</script><script type="text/javascript" src="/scripts/doctype/z_last_include.jsx?v=03-17-2022_1811"></script></body><script type="text/html" id="popup_template"><div class="popup popup_form" style=""><iframe src="$src" style=""></iframe></div></script></html>
+
+10:36:18.706 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 180; columnNumber: 30; The entity name must immediately follow the '&' in the entity reference.
+10:36:18.707 [print] <!DOCTYPE html><html lang="en" class=" ltr " data-doctype="true" dir="ltr" ontouchend="CustomEvent.fireAll('body_clicked', event);" onclick="CustomEvent.fireAll('body_clicked', event);"><head><title>ServiceNow</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"></meta><meta http-equiv="cache-control" content="public"></meta><script src="/uxasset/externals/service-worker/loader.jsdbx?sysparm_substitute=false"></script><script>var mswDisabledValue = "false";
+			var disabled = mswDisabledValue === 'true' ? true : false;
+			var serviceWorkers = JSON.parse("[{\"scope\":\"/\",\"serviceWorkerUrl\":\"/uxsw/scope/root.js\"},{\"scope\":\"/x\",\"serviceWorkerUrl\":\"/uxsw/scope/now_x.js\"},{\"scope\":\"/now\",\"serviceWorkerUrl\":\"/uxsw/scope/now_x.js\"}]");
+			var SERVICE_WORKER_MANAGER_CONFIG = {disabled, serviceWorkers};
+			if (window.serviceWorkerManager) window.serviceWorkerManager.init(SERVICE_WORKER_MANAGER_CONFIG);</script><meta name="viewport" content="initial-scale=1.0"></meta><script type="text/javascript" data-description="globals population">
+	window.NOW = window.NOW || {};
+	var g_loadTime = new Date();
+	var lastActivity = new Date();
+	var g_lang = 'en';
+	var g_system_lang = 'en';
+	var g_enhanced_activated = 'true';
+	  var g_popup_timeout = parseInt(100);
+	var g_export_warn_threshold = parseInt(10000);
+	  var g_event_handler_ids = {};
+	var g_event_handlers = [];
+	var g_event_handlers_onLoad = [];
+	var g_event_handlers_onSubmit = [];
+	var g_event_handlers_onChange = [];
+	var g_event_handlers_onCellEdit = {};
+	var g_event_handlers_localCache = {};
+	var g_event_handlers_queryTracking = true;
+	var g_user_date_time_format = "yyyy-MM-dd HH:mm:ss";
+	var g_user_date_format = "yyyy-MM-dd";
+	var g_user_decimal_separator = ".";
+	var g_user_grouping_separator = ",";
+	var g_glide_list_separator = ", ";
+	var g_allow_field_dependency_for_templates = ("true" === "true");
+	var g_tz_offset = -28800000;
+	  var g_tz_user_offset = true;
+	var g_first_day_of_week = parseInt(1, 10);
+	var g_date_picker_first_day_of_week = parseInt(0, 10);
+	  var g_full_calendar_edit = true;
+	var g_submitted = false;
+	var g_max_table_length = 80;
+	var g_fontSizePreference = "";
+	var g_fontSize = "10pt";
+	// use to be the sys_property glide.ui.js_error_notify, hard coded for PRB603998
+	var g_jsErrorNotify = "true";
+	var g_cancelPreviousTransaction = true;
+	var g_text_direction = "ltr";
+	var g_glide_list_filter_max_length =  parseInt("0", 10);
+	var g_accessibility = false;
+	var g_accessibility_tooltips = false;
+	var g_accessibility_tooltip_duration = parseInt("10", 10);
+	var g_accessibility_visual_patterns = false;
+	var g_accessibility_screen_reader_table = false;
+	var g_detail_row = false;
+	var g_builddate = "03-17-2022_1811";
+	// default values to be used in absence of user preferences are hard coded below
+	// as well as in keyboardShortcuts.js and keyboard_preference_changer.xml
+	window.g_keyboard_shortcuts = {};
+	window.g_keyboard_shortcuts.allow_in_input_fields = false;
+	window.g_keyboard_shortcuts.enabled = true;
+	window.g_keyboard_shortcuts.global_search = {};
+	window.g_keyboard_shortcuts.global_search.enabled = true;
+	window.g_keyboard_shortcuts.global_search.key_combination = 'ctrl+alt+g';
+	window.g_keyboard_shortcuts.main_frame = {};
+	window.g_keyboard_shortcuts.main_frame.enabled = true;
+	window.g_keyboard_shortcuts.main_frame.key_combination = 'ctrl+alt+p';
+	window.g_keyboard_shortcuts.navigator_toggle = {};
+	window.g_keyboard_shortcuts.navigator_toggle.enabled = true;
+	window.g_keyboard_shortcuts.navigator_toggle.key_combination = 'ctrl+alt+c';
+	window.g_keyboard_shortcuts.navigator_filter = {};
+	window.g_keyboard_shortcuts.navigator_filter.enabled = true;
+	window.g_keyboard_shortcuts.navigator_filter.key_combination = 'ctrl+alt+f';
+	window.g_keyboard_shortcuts.impersonator = {}
+	window.g_keyboard_shortcuts.impersonator.enabled = true;
+	window.g_keyboard_shortcuts.impersonator.key_combination = 'ctrl+alt+i';
+	var g_concourse_onmessage_enforce_same_origin = 'true'.toLowerCase() === 'true';
+	var g_concourse_onmessage_enforce_same_origin_whitelist = '';
+	window.g_load_functions = [];
+	window.g_render_functions = [];
+	window.g_late_load_functions = [];
+	window.g_tiny_url = {};
+	window.g_tiny_url.use_tiny = 'true' === 'true';
+	window.g_tiny_url.min_length = parseInt('1024');
+	
+	
+	var g_ck = 'a50a53341b131110102e0fa2604bcb069788a4e9006b9653d55c940fff51339eac1c49e0';
+	
+
+	
+	var g_acWaitTime = parseInt(250);
+	
+
+	var g_autoRequest = '';
+
+	try {
+		window.NOW.dateFormat = JSON.parse("{\"timeAgo\": false, \"dateBoth\": false}");
+	} catch (e) {
+		window.NOW.dateFormat = {timeAgo: false, dateBoth: false};
+	}
+
+	window.NOW.dateFormat.dateStringFormat = "yyyy-MM-dd";
+	window.NOW.dateFormat.timeStringFormat = "HH:mm:ss";
+	window.NOW.shortDateFormat = false;
+	window.NOW.listTableWrap = true;
+	window.NOW.compact = false;
+  	window.NOW.templateToggle = false;
+	window.NOW.tabbed = true;
+	window.NOW.permalink = true;
+	window.NOW.useSimpleStorage = true;
+	window.NOW.httpRequestCompressionThreshold = 40000;
+	window.NOW.httpRequestCompressionLevel = -1;
+	window.NOW.httpRequestCompressionMemoryLevel = -1;
+	window.NOW.deferAmbConnection = false;
+	window.NOW.deferredAmbConnectionTimeout = 10000;
+	window.NOW.simpleStorageSynch = "573613301b131110102e0fa2604bcb70";
+	window.NOW.language =  'en';
+	window.NOW.listOpenInAppTab = false;
+	window.NOW.floatingScrollbars = false;
+	
+	window.NOW.user = {};
+	window.NOW.user.preferences = [];
+	window.NOW.user.roles = '';
+	window.NOW.user.allRoles = '';
+	window.NOW.user.userID = '5136503cc611227c0183e96598c4f706';
+	window.NOW.user.departmentID = '';
+	window.NOW.user.firstName = '';
+	window.NOW.user.lastName = 'Guest';
+	window.NOW.user.name = 'guest';
+  	window.NOW.user.isImpersonating = false;
+	window.NOW.batch_glide_ajax_requests = 'true' === 'true';
+	window.NOW.batch_glide_ajax_requests_max_time_in_queue = ~~'50';
+	window.NOW.batch_glide_ajax_disable_time = ~~'1000';
+
+	window.NOW.currency = {};
+	window.NOW.currency.code = 'USD';
+	window.NOW.locale = {};
+	window.NOW.locale.code = 'en_US';
+
+	window.NOW.attachment = {};
+	
+	window.NOW.attachment.overflow_limit =  parseInt('3', 10);
+	window.NOW.isPolarisEnabled = "true";
+	window.NOW.polaris_page_info ={"canUsePolarisCSS":true,"canUsePolarisTemplates":true,"jvar_form_name":"session_timeout"};</script><script data-comment="GlideUser initialization">(function() {
+		 g_render_functions.push(setGlideUser);
+		function setGlideUser() {
+			if (window.g_user || !window.GlideUser)
+		return;
+
+		window.g_user = new GlideUser(NOW.user.name,
+			  NOW.user.firstName,
+			  NOW.user.lastName,
+			  NOW.user.roles,
+			  NOW.user.userID,
+			  NOW.user.departmentID);
+		window.g_user.setRoles(NOW.user.allRoles, true);
+		}
+	})();</script><script data-description="NOW glide web analytics siteid and url">window.snWebaConfig = window.snWebaConfig || {};
+		// glide web analytics config
+		window.snWebaConfig.siteId = "0";
+		window.snWebaConfig.trackerURL = "";
+		window.snWebaConfig.webaScriptPath = "/scripts/piwik-3.1.1/thirdparty/piwik.min.js";
+		window.snWebaConfig.ambClient = (window.g_ambClient) ? window.g_ambClient : ((window.amb)? window.amb.getClient(): "");
+		window.snWebaConfig.subscribed = false;</script><script type="text/javascript" src="/ConditionalFocus.jsdbx?v=03-17-2022_1811&amp;c=7_88"></script><link href="favicon.ico?v=4" rel="shortcut icon"></link><script>// window.performance in Chrome, Firefox, and Internet Explorer 9+ (not Safari)
+				window.NOW.xperf = window.performance || {};
+				if (!NOW.xperf.now) {
+					NOW.xperf.now = function() { return new Date().getTime(); };
+				}
+				NOW.xperf.parseBegin = NOW.xperf.now();
+				NOW.xperf.cssBegin = NOW.xperf.now();</script><link type="text/css" rel="stylesheet" href="/styles/css_includes_doctype_polaris.cssx?v=03-17-2022_1811&amp;c=8e6697301b131110102e0fa2604bcb25&amp;theme=Polaris"></link><script>window.NOW = window.NOW || {};
+		 NOW.isUsingPolaris = true;</script><link type="text/css" rel="stylesheet" href="/styles/polarisberg/css_includes_polarisberg.cssx?v=03-17-2022_1811&amp;c=8e6697301b131110102e0fa2604bcb25&amp;theme=Polaris"></link><link type="text/css" rel="stylesheet" href="/polarisberg_theme_variables.do?c=hnsK6bkZtvJNOUzZMYmfkWgB9Bc="></link><script>NOW.xperf.cssEnd = NOW.xperf.now();
+			NOW.xperf.scriptBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/js_includes_customer.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script>NOW.xperf.scriptEnd = NOW.xperf.now();
+				NOW.xperf.parseEnd = NOW.xperf.now();
+				$j(function() {
+					var x = NOW.xperf;
+					var last = x.lastDoctypeEnd - x.lastDoctypeBegin;
+					if (window.console) {
+						console.log("+-- Parse times");
+						console.log("| CSS parse: " + (x.cssEnd - x.cssBegin));
+						console.log("| JS  doctype: " + (x.scriptEnd - x.scriptBegin));
+						console.log("| JS at end of page: " + last);
+						console.log("+-- All parsing: " + (x.parseEnd - x.parseBegin + last));
+					}
+
+					var ms = Math.round(x.parseEnd - x.parseBegin + last);
+					CustomEvent.fire('page_timing', { name: 'PARS', ms: ms, win: window });
+
+					if (window.performance && performance.timing) {
+						NOW.xperf.z = new Date().getTime();
+						setTimeout(function () {
+						   var x = performance.timing.loadEventEnd - performance.timing.domContentLoadedEventStart;
+						   CustomEvent.fire('page_timing', { name: 'DOMC', ms: x, win: window });
+						   x = performance.timing.loadEventStart - NOW.xperf.z;
+						   CustomEvent.fire('page_timing', { name: 'PROC', ms: x, win: window });
+						}, 250);  // has to be done after the loadEvent ends
+					}
+				})</script><script type="text/javascript" src="/scripts/doctype/js_includes_legacy.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" data-comment="navpage layout preferences, onfocus observation">/**
+	* Every window needs to observe these events.
+	*/
+	if (Prototype.Browser.IE && !isMSIE9) {
+		document.onfocusout = function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); };
+		document.onfocusin = function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); };
+	} else {
+		Event.observe(window, 'blur', function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); });
+		Event.observe(window, 'focus', function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); });
+	}</script><script type="text/javascript">g_swLoadTime = new StopWatch(g_loadTime);
+
+    if (window.CustomEvent){
+        CustomEvent.fireAll("ck_updated", "a50a53341b131110102e0fa2604bcb069788a4e9006b9653d55c940fff51339eac1c49e0");
+	    CustomEvent.fireTop("navigation.complete", window);
+	}
+
+    addLoadEvent( function() {
+
+		if (isValidTouchDevice())
+			addTouchScrollClassToBody();
+
+      if (typeof g_ck != 'undefined') {
+        CustomEvent.observe("ck_updated", function(ck) { g_ck = ck; });
+        CustomEvent.fireAll("ck_updated", "a50a53341b131110102e0fa2604bcb069788a4e9006b9653d55c940fff51339eac1c49e0");}try {
+              var helpico = getTopWindow().document.getElementById("help_ico");
+
+              if (helpico) {
+                var urlname=window.location.pathname.split("?");
+                var search_str = window.location.search;
+                
+                // if this is a form, extract the record's sys_id...
+                var sys_id_loc = search_str.search(/sys_id=[0-9a-f]{32}/i);
+                var sys_id_str = (sys_id_loc != -1) ? search_str.substr(sys_id_loc, 39) : null;
+                
+                // make the URL to our context help processor...
+                var url_search = "?sysparm_url=" + urlname[0];
+                if (sys_id_loc != -1)
+                   url_search += "&" + sys_id_str;
+
+               	helpico.href="context_help.do" + url_search;                	
+              }
+            } catch (exception) {}
+
+      synchCache();
+      pageLoaded();
+    });
+    
+    function synchCache() {
+      try {
+        var w = getTopWindow();
+        if (w.g_cache_message)
+          w.g_cache_message.stamp("573613301b131110102e0fa2604bcb70");
+  
+        if (w.g_cache_td)
+          w.g_cache_td.stamp("88d99bf41b131110102e0fa2604bcb10");
+      } catch(e) {}
+    }
+
+    function isValidTouchDevice() {
+		var navigator = window.navigator || {};
+		var devices;
+		try {
+			devices = 'iPad,Android'.split(',');
+		} catch(ex) {
+			devices = [];
+		}
+		return devices.some(function(item) {return item.trim() === navigator.platform;});
+	}
+
+	function addTouchScrollClassToBody() {
+		if ('ontouchstart' in window ||
+				(navigator.maxTouchPoints !== 'undefined' && navigator.maxTouchPoints > 0) ||
+				(navigator.msMaxTouchPoints !== 'undefined' && navigator.msMaxTouchPoints > 0)) {
+			if (typeof document.body != undefined) {
+				document.body.classList.add('touch_scroll');
+			}
+		}
+	}
+  </script><!--googleoff: all--><noscript>This site requires JavaScript to be enabled</noscript> <!--googleon: all--><script type="text/javascript" src="/scripts/app.guided_tours/js_guided_tours_includes.jsx?v=03-17-2022_1811"></script></head><body class="                -polaris " data-formName="session_timeout"><span class="sr-only"><div id="html_page_aria_live_polite" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="polite"></div><div id="html_page_aria_live_assertive" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="assertive"></div></span><div class="outputmsg_div"><div id="output_messages" class="outputmsg_container outputmsg_hide"><button type="button" aria-label="Close Messages" id="close-messages-btn" class="btn btn-icon close icon-cross" onclick="GlideUI.get().onCloseMessagesButtonClick(this); return false;"></button><div class="outputmsg_div" aria-live="polite" role="region" data-server-messages="false"></div></div><script>addRenderEvent(function() {CustomEvent.fire('glide_optics_inspect_update_watchfield', '');});
+
+			var accessibilityEnabled = Boolean(false);
+			if (accessibilityEnabled) {
+				$j(function() {
+					$j('#output_messages .btn.btn-icon.close').focus();
+				});
+			}</script><span class="ui_notification" data-type="session_change" data-text="" data-attr-session_domain="global"></span></div><div class="loading-container"><h1 class="loading-message">You are not logged in, or your session has expired. Redirecting to the login page</h1><div class="loading-indicator icon-loading icon-lg"></div></div><script data-comment="loading_page redirect">setTimeout(function() {
+				top.location.href = 'nav_to.do?uri=welcome.do';
+			}, 1500);</script><div style="border:none; visibility:hidden"><form name="sys_personalize" style="display:inline" method="GET" action="slushbucket.do"><input type="hidden" name="sysparm_referring_url" value="session_timeout.do"></input><input type="hidden" name="sysparm_view" value=""></input></form></div><script>(function() {
+        addLateLoadEvent(throwFrameLoaded);
+        // find if padding is needed
+        var pad = (isMSIE6 || isMSIE7 || navigator.userAgent.indexOf('MSIE 8') != -1) ? 1 : 0;
+        function throwFrameLoaded() {
+            try {
+                if (window.parent.CustomEvent) {
+                    // history suggests that if we don't size it down on page load,
+                    // when we check the height it will show the previous page's height
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, 10);
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, getPageHeight());
+                }
+            } catch (e) {}
+        }
+        function throwFrameSized() {
+            try {
+                if (window.parent.CustomEvent) {
+                    // IE9/IE10: resize events will be continuously triggered when there is a difference between document.body.scrollHeight and window.frameElement.height
+                    // to solve this issue, we do not fire event if the height we are going to set is the same as the height obtained after the previous fired event
+                    var previousHeight = window["g_iframe_height"];
+                    var pageHeight = getPageHeight();
+                    if (previousHeight != pageHeight) {
+                        window.parent.CustomEvent.fire('content_frame.resized', self.name, pageHeight);
+                        // IE9/IE10: page height may be changed again after the above firing. So we have to call getPageHeight() to get the new height after the above event has been fired.
+                        window["g_iframe_height"] = getPageHeight();
+                    }
+                }
+            } catch (e) {}
+        }
+
+        function throwFrameSizedSmaller(){
+            try {
+                if (window.parent.CustomEvent) {
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, getPageHeight(true));
+                }
+            } catch (e) {}
+        }
+
+        /**
+         * Simply speaking, scrollHeight and offsetHeight work differently on different browsers
+         * and in and out of quirks mode. IE9 has bugs that do not report them correctly even if
+         * you pick the right one, so we've built some extra controls.
+         */
+        function getPageHeight(resizeSmall) {
+            var popupElement, popupHeight;
+            // first, look for popups
+            var popups = $$('body > div.popup, .modal.in > .modal-dialog');
+            if (popups.length > 0) {
+                popupElement = popups[0];
+                popupHeight = popupElement.scrollHeight + popupElement.offsetTop;
+                //padding is needed or else the bottom border of the popup will be missing
+                return (document.body.scrollHeight > popupHeight ? document.body.scrollHeight : popupHeight) + pad;
+            }
+            // then, look for form elements
+            // use more specific selector to reduce browser response time
+            if ($$('body > div.section_header_content_no_scroll').length > 0) {
+                var mainContentHeight = $$('body > div.section_header_content_no_scroll')[0].scrollHeight;
+                
+                // we use the form_title class to distinguish between UI15+ where the form title actually adds to the height
+                var header = $$('body > div.section_header_div_no_scroll.form_title');
+                var headerHeight = header.length == 0 ? 0 : header[0].getHeight();
+                return mainContentHeight + headerHeight;
+            }
+            // then, look for touch scroll elements *CALGARY and forward*
+            if ($$('body > .touch_scroll').length > 0)
+                return $$('body > .touch_scroll')[0].scrollHeight;
+            // then, get the normal page height
+            if (document.body.scrollHeight || document.documentElement.scrollHeight) {
+                if (!resizeSmall){
+                    if(document.body.scrollHeight > document.documentElement.scrollHeight)
+                        return document.body.scrollHeight;
+                    else
+                        return document.documentElement.scrollHeight;
+                }
+                else{
+                    if(document.documentElement.scrollHeight > document.body.scrollHeight)
+                        return document.body.scrollHeight;
+                    else
+                        return document.documentElement.scrollHeight;
+                }
+            }
+            return document.body.offsetHeight;
+        }
+        // start observing only after page has been loaded to avoid handling large number of resize events especially on IE 7 and IE 8
+        addAfterPageLoadedEvent(function() {
+            CustomEvent.observe('frame.resized', throwFrameSized);
+            CustomEvent.observe('frame.resized.smaller', throwFrameSizedSmaller);
+            CustomEvent.observe('partial.page.reload', throwFrameLoaded); // specifically, reports and lists that cause the page to shrink
+            Event.observe(document.onresize ? document : window, "resize", throwFrameSized);
+            _frameChanged();
+        });
+    })();</script><span style="display:none" data-comments="js_includes_last_doctype"></span><script>NOW.xperf.lastDoctypeBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_last_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/heisenberg/heisenberg_all.jsx?v=03-17-2022_1811"></script><script type="text/javascript" src="/scripts/js_includes_list_edit_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/transaction_scope_includes.jsx?v=03-17-2022_1811"></script><script>if ('') 
+			GlideTransactionScope.setTransactionScope('');
+		if ('') 
+			GlideTransactionScope.setRecordScope('');
+		if ('') 
+			GlideTransactionScope.setTransactionUpdateSet('');
+		if (typeof g_form != 'undefined')
+			$(g_form.getFormElement()).fire('glidescope:initialized', {gts : GlideTransactionScope});</script><span style="display:none" data-comments="requires"></span><script>NOW.xperf.lastDoctypeEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script>NOW.xperf.dbContextBegin = NOW.xperf.now();</script><script>NOW.xperf.dbContextEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script data-description="MessagesTag">(function() {
+ var messages = new GwtMessage();
+messages.set('Browser response time');
+messages.set('Timing details');
+messages.set('{0} of {1} {2}: {3}');
+messages.set('{0} of {1} Other: {2}');
+messages.set('{0} of {1} {2}: {3}');
+})()</script><script id="glide:page_timing_div" type="application/xml"><button class="pointerhand icon-stop-watch btn btn-icon btn-response-time " type="button" aria-controls="glide:timing_widget" title="Response time(ms): #{RESP}, Network: #{NETW}, server: #{SERV}, browser: #{REND}" aria-label="Response Time"></button><div style="display: none"><div class="timing_span" id="glide:timing_widget">Response time(ms): #{RESP}, Network: #{NETW}, server: #{SERV}, browser: #{REND}<div class="timingGraphDiv"><span class="timing_graph" data-aria-label="Show Timing Breakdown"><span class="timing_network" title="Network #{NETW}ms"></span><span class="timing_server" title="Server #{SERV}ms"></span><span class="timing_browser" title="Browser #{REND}ms"></span></span></div><table class="table table-condensed table-timing-detail" aria-label="Browser timing detail"><thead><tr><th colspan="2">Browser timing detail</th><th>Time</th></tr></thead><tbody id="page_timing_details"></tbody></table></div></div></script><script id="glide:page_timing_details" type="application/xml"><div class="timing_details">#{details}</div></script><script id="glide:page_timing_detail_line" type="application/xml"><tr class="#{has_children}" data-children="#{child_count}" aria-label="#{has_aria_label}"><td colspan="2">#{HTML:name}</td><td>#{ms} ms</td></tr>#{children}</script><script id="glide:page_timing_child_line" type="application/xml"><tr aria-label="#{childAriaLabel}"><td></td><td>#{HTML:name}</td><td>#{ms} ms</td></tr></script><script type="text/javascript">var g_serverTime = parseInt("30") + parseInt("0");
+            var g_logClientViewRoles = "";
+
+			// do not do this for the navigation menu
+            if (window.name != 'gsft_nav') {
+				 addAfterPageLoadedEvent(function() {
+					 if (window.performance)
+						setTimeGraph();
+					 else 
+						firePageTimer();
+				 });
+			 }
+			 
+			function setTimeGraph() {
+				if (window.performance.timing.loadEventEnd > 0)
+			 		firePageTimer();
+			 	else 
+			 		setTimeout(setTimeGraph, 300);
+			 }
+			 
+			function firePageTimer() {
+				 if (window.performance && performance.timing.requestStart != performance.timing.responseStart) {
+				 	var p = performance.timing;
+
+				 	CustomEvent.fire('page_timing', { name: 'SERV', ms: p.responseEnd - p.requestStart});
+				 	CustomEvent.fire('page_timing', { name: 'REND', ms: (p.loadEventEnd - p.responseEnd) });
+				 	CustomEvent.fire('page_timing_network', { name: 'NETW', ms: (p.responseEnd - p.navigationStart) });
+				 } else {
+				    CustomEvent.fire('page_timing', { name: 'SERV', ms: g_serverTime });
+					CustomEvent.fire('page_timing', { name: 'REND', startTime: g_loadTime });
+					CustomEvent.fire('page_timing_network', { name: 'NETW', loadTime: g_loadTime });
+				 }
+
+			 CustomEvent.fire('page_timing_show', { show: ''  });var o = {};
+	      o.types = {};o.types['SECT'] = true;o.types['RLV2'] = true;o.types['UIOL'] = true;o.types['CSOL'] = true;
+	
+	      o.transaction_id = '610adb701b131110102e0fa2604bcbe7';
+	      o.table_name = '';
+	      o.form_name = 'session_timeout';
+	      o.view_id = 'Default view';
+	      o.logged_in = false;
+	      o.win = window;
+	      CustomEvent.fire('page_timing_client', o);}
+			 
+            // The following line is used to set the time when we start requesting a new page
+            Event.observe(window, 'beforeunload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+                CustomEvent.fireTop('request_start', document);
+            });
+
+            // simple pages fire this (stats.do, etc.)
+            CustomEvent.observe('simple_page.unload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+            }); 
+
+            // indicate we have completed the request (used by RequestManager.js for cancel widget)
+            addLoadEvent(function() {
+            	CustomEvent.fireTop("request_complete", window.location);
+            });</script><script type="text/javascript" src="/scripts/doctype/z_last_include.jsx?v=03-17-2022_1811"></script></body><script type="text/html" id="popup_template"><div class="popup popup_form" style=""><iframe src="$src" style=""></iframe></div></script></html>
+10:36:18.785 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:36:18.795 request:
+1 > GET https://dev134534.service-now.com/com/api/now/table/incident
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic YWRtaW46OEUhdXYxeW5eRlBY
+1 > Connection: Keep-Alive
+1 > Host: dev134534.service-now.com
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_333)
+
+10:36:20.236 response time in milliseconds: 1441.52
+1 < 302
+1 < Content-Length: 0
+1 < Date: Sat, 19 Nov 2022 05:06:19 GMT
+1 < Location: /session_timeout.do
+1 < Server: ServiceNow
+1 < Server-Timing: sem_wait;dur=0, sesh_wait;dur=0
+1 < Set-Cookie: [JSESSIONID=CB586BC684F21F1892C85A238D53818E; Path=/; HttpOnly; SameSite=None; Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; SameSite=None; Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; SameSite=None; Secure, glide_user_route=glide.423c986a8aa1673cf90112f2f88ba9f8; Max-Age=2147483647; Expires=Thu, 07-Dec-2090 08:20:26 GMT; Path=/; HttpOnly; SameSite=None; Secure, BIGipServerpool_dev134534=730115850.63040.0000; path=/; Httponly; Secure; SameSite=None; Secure]
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Is-Logged-In: false
+1 < X-Transaction-ID: 4a0a57b01b13
+
+10:36:20.239 request:
+2 > GET https://dev134534.service-now.com/com/api/now/table/incident
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Basic YWRtaW46OEUhdXYxeW5eRlBY
+2 > Connection: Keep-Alive
+2 > Cookie: BIGipServerpool_dev134534=730115850.63040.0000; JSESSIONID=CB586BC684F21F1892C85A238D53818E; glide_user_route=glide.423c986a8aa1673cf90112f2f88ba9f8
+2 > Host: dev134534.service-now.com
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_333)
+
+10:36:20.525 response time in milliseconds: 276.78
+2 < 200
+2 < Cache-Control: no-cache,no-store,must-revalidate,max-age=-1
+2 < Content-Type: text/html;charset=UTF-8
+2 < Date: Sat, 19 Nov 2022 05:06:19 GMT
+2 < Expires: 0
+2 < Pragma: no-store,no-cache
+2 < Referrer-Policy: same-origin
+2 < Server: ServiceNow
+2 < Server-Timing: wall;dur=32, sem_wait;dur=0, sesh_wait;dur=0, app_cpu;dur=24, db;dur=3, acl;dur=0, br;dur=null, ui_action;dur=0, cache_build;dur=0, scripting;dur=1
+2 < Set-Cookie: [glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; SameSite=None; Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly; SameSite=None; Secure]
+2 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Is-Logged-In: false
+2 < X-Transaction-ID: 4e0a1f341b13
+<!DOCTYPE html><html lang="en" class=" ltr " data-doctype="true" dir="ltr" ontouchend="CustomEvent.fireAll('body_clicked', event);" onclick="CustomEvent.fireAll('body_clicked', event);"><head><title>ServiceNow</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"></meta><meta http-equiv="cache-control" content="public"></meta><script src="/uxasset/externals/service-worker/loader.jsdbx?sysparm_substitute=false"></script><script>var mswDisabledValue = "false";
+			var disabled = mswDisabledValue === 'true' ? true : false;
+			var serviceWorkers = JSON.parse("[{\"scope\":\"/\",\"serviceWorkerUrl\":\"/uxsw/scope/root.js\"},{\"scope\":\"/x\",\"serviceWorkerUrl\":\"/uxsw/scope/now_x.js\"},{\"scope\":\"/now\",\"serviceWorkerUrl\":\"/uxsw/scope/now_x.js\"}]");
+			var SERVICE_WORKER_MANAGER_CONFIG = {disabled, serviceWorkers};
+			if (window.serviceWorkerManager) window.serviceWorkerManager.init(SERVICE_WORKER_MANAGER_CONFIG);</script><meta name="viewport" content="initial-scale=1.0"></meta><script type="text/javascript" data-description="globals population">
+	window.NOW = window.NOW || {};
+	var g_loadTime = new Date();
+	var lastActivity = new Date();
+	var g_lang = 'en';
+	var g_system_lang = 'en';
+	var g_enhanced_activated = 'true';
+	  var g_popup_timeout = parseInt(100);
+	var g_export_warn_threshold = parseInt(10000);
+	  var g_event_handler_ids = {};
+	var g_event_handlers = [];
+	var g_event_handlers_onLoad = [];
+	var g_event_handlers_onSubmit = [];
+	var g_event_handlers_onChange = [];
+	var g_event_handlers_onCellEdit = {};
+	var g_event_handlers_localCache = {};
+	var g_event_handlers_queryTracking = true;
+	var g_user_date_time_format = "yyyy-MM-dd HH:mm:ss";
+	var g_user_date_format = "yyyy-MM-dd";
+	var g_user_decimal_separator = ".";
+	var g_user_grouping_separator = ",";
+	var g_glide_list_separator = ", ";
+	var g_allow_field_dependency_for_templates = ("true" === "true");
+	var g_tz_offset = -28800000;
+	  var g_tz_user_offset = true;
+	var g_first_day_of_week = parseInt(1, 10);
+	var g_date_picker_first_day_of_week = parseInt(0, 10);
+	  var g_full_calendar_edit = true;
+	var g_submitted = false;
+	var g_max_table_length = 80;
+	var g_fontSizePreference = "";
+	var g_fontSize = "10pt";
+	// use to be the sys_property glide.ui.js_error_notify, hard coded for PRB603998
+	var g_jsErrorNotify = "true";
+	var g_cancelPreviousTransaction = true;
+	var g_text_direction = "ltr";
+	var g_glide_list_filter_max_length =  parseInt("0", 10);
+	var g_accessibility = false;
+	var g_accessibility_tooltips = false;
+	var g_accessibility_tooltip_duration = parseInt("10", 10);
+	var g_accessibility_visual_patterns = false;
+	var g_accessibility_screen_reader_table = false;
+	var g_detail_row = false;
+	var g_builddate = "03-17-2022_1811";
+	// default values to be used in absence of user preferences are hard coded below
+	// as well as in keyboardShortcuts.js and keyboard_preference_changer.xml
+	window.g_keyboard_shortcuts = {};
+	window.g_keyboard_shortcuts.allow_in_input_fields = false;
+	window.g_keyboard_shortcuts.enabled = true;
+	window.g_keyboard_shortcuts.global_search = {};
+	window.g_keyboard_shortcuts.global_search.enabled = true;
+	window.g_keyboard_shortcuts.global_search.key_combination = 'ctrl+alt+g';
+	window.g_keyboard_shortcuts.main_frame = {};
+	window.g_keyboard_shortcuts.main_frame.enabled = true;
+	window.g_keyboard_shortcuts.main_frame.key_combination = 'ctrl+alt+p';
+	window.g_keyboard_shortcuts.navigator_toggle = {};
+	window.g_keyboard_shortcuts.navigator_toggle.enabled = true;
+	window.g_keyboard_shortcuts.navigator_toggle.key_combination = 'ctrl+alt+c';
+	window.g_keyboard_shortcuts.navigator_filter = {};
+	window.g_keyboard_shortcuts.navigator_filter.enabled = true;
+	window.g_keyboard_shortcuts.navigator_filter.key_combination = 'ctrl+alt+f';
+	window.g_keyboard_shortcuts.impersonator = {}
+	window.g_keyboard_shortcuts.impersonator.enabled = true;
+	window.g_keyboard_shortcuts.impersonator.key_combination = 'ctrl+alt+i';
+	var g_concourse_onmessage_enforce_same_origin = 'true'.toLowerCase() === 'true';
+	var g_concourse_onmessage_enforce_same_origin_whitelist = '';
+	window.g_load_functions = [];
+	window.g_render_functions = [];
+	window.g_late_load_functions = [];
+	window.g_tiny_url = {};
+	window.g_tiny_url.use_tiny = 'true' === 'true';
+	window.g_tiny_url.min_length = parseInt('1024');
+	
+	
+	var g_ck = '860a57b01b131110102e0fa2604bcb3bcadb652000105edbfd6c5a193c748c28e20ed2a4';
+	
+
+	
+	var g_acWaitTime = parseInt(250);
+	
+
+	var g_autoRequest = '';
+
+	try {
+		window.NOW.dateFormat = JSON.parse("{\"timeAgo\": false, \"dateBoth\": false}");
+	} catch (e) {
+		window.NOW.dateFormat = {timeAgo: false, dateBoth: false};
+	}
+
+	window.NOW.dateFormat.dateStringFormat = "yyyy-MM-dd";
+	window.NOW.dateFormat.timeStringFormat = "HH:mm:ss";
+	window.NOW.shortDateFormat = false;
+	window.NOW.listTableWrap = true;
+	window.NOW.compact = false;
+  	window.NOW.templateToggle = false;
+	window.NOW.tabbed = true;
+	window.NOW.permalink = true;
+	window.NOW.useSimpleStorage = true;
+	window.NOW.httpRequestCompressionThreshold = 40000;
+	window.NOW.httpRequestCompressionLevel = -1;
+	window.NOW.httpRequestCompressionMemoryLevel = -1;
+	window.NOW.deferAmbConnection = false;
+	window.NOW.deferredAmbConnectionTimeout = 10000;
+	window.NOW.simpleStorageSynch = "573613301b131110102e0fa2604bcb70";
+	window.NOW.language =  'en';
+	window.NOW.listOpenInAppTab = false;
+	window.NOW.floatingScrollbars = false;
+	
+	window.NOW.user = {};
+	window.NOW.user.preferences = [];
+	window.NOW.user.roles = '';
+	window.NOW.user.allRoles = '';
+	window.NOW.user.userID = '5136503cc611227c0183e96598c4f706';
+	window.NOW.user.departmentID = '';
+	window.NOW.user.firstName = '';
+	window.NOW.user.lastName = 'Guest';
+	window.NOW.user.name = 'guest';
+  	window.NOW.user.isImpersonating = false;
+	window.NOW.batch_glide_ajax_requests = 'true' === 'true';
+	window.NOW.batch_glide_ajax_requests_max_time_in_queue = ~~'50';
+	window.NOW.batch_glide_ajax_disable_time = ~~'1000';
+
+	window.NOW.currency = {};
+	window.NOW.currency.code = 'USD';
+	window.NOW.locale = {};
+	window.NOW.locale.code = 'en_US';
+
+	window.NOW.attachment = {};
+	
+	window.NOW.attachment.overflow_limit =  parseInt('3', 10);
+	window.NOW.isPolarisEnabled = "true";
+	window.NOW.polaris_page_info ={"canUsePolarisCSS":true,"canUsePolarisTemplates":true,"jvar_form_name":"session_timeout"};</script><script data-comment="GlideUser initialization">(function() {
+		 g_render_functions.push(setGlideUser);
+		function setGlideUser() {
+			if (window.g_user || !window.GlideUser)
+		return;
+
+		window.g_user = new GlideUser(NOW.user.name,
+			  NOW.user.firstName,
+			  NOW.user.lastName,
+			  NOW.user.roles,
+			  NOW.user.userID,
+			  NOW.user.departmentID);
+		window.g_user.setRoles(NOW.user.allRoles, true);
+		}
+	})();</script><script data-description="NOW glide web analytics siteid and url">window.snWebaConfig = window.snWebaConfig || {};
+		// glide web analytics config
+		window.snWebaConfig.siteId = "0";
+		window.snWebaConfig.trackerURL = "";
+		window.snWebaConfig.webaScriptPath = "/scripts/piwik-3.1.1/thirdparty/piwik.min.js";
+		window.snWebaConfig.ambClient = (window.g_ambClient) ? window.g_ambClient : ((window.amb)? window.amb.getClient(): "");
+		window.snWebaConfig.subscribed = false;</script><script type="text/javascript" src="/ConditionalFocus.jsdbx?v=03-17-2022_1811&amp;c=7_88"></script><link href="favicon.ico?v=4" rel="shortcut icon"></link><script>// window.performance in Chrome, Firefox, and Internet Explorer 9+ (not Safari)
+				window.NOW.xperf = window.performance || {};
+				if (!NOW.xperf.now) {
+					NOW.xperf.now = function() { return new Date().getTime(); };
+				}
+				NOW.xperf.parseBegin = NOW.xperf.now();
+				NOW.xperf.cssBegin = NOW.xperf.now();</script><link type="text/css" rel="stylesheet" href="/styles/css_includes_doctype_polaris.cssx?v=03-17-2022_1811&amp;c=8e6697301b131110102e0fa2604bcb25&amp;theme=Polaris"></link><script>window.NOW = window.NOW || {};
+		 NOW.isUsingPolaris = true;</script><link type="text/css" rel="stylesheet" href="/styles/polarisberg/css_includes_polarisberg.cssx?v=03-17-2022_1811&amp;c=8e6697301b131110102e0fa2604bcb25&amp;theme=Polaris"></link><link type="text/css" rel="stylesheet" href="/polarisberg_theme_variables.do?c=hnsK6bkZtvJNOUzZMYmfkWgB9Bc="></link><script>NOW.xperf.cssEnd = NOW.xperf.now();
+			NOW.xperf.scriptBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/js_includes_customer.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script>NOW.xperf.scriptEnd = NOW.xperf.now();
+				NOW.xperf.parseEnd = NOW.xperf.now();
+				$j(function() {
+					var x = NOW.xperf;
+					var last = x.lastDoctypeEnd - x.lastDoctypeBegin;
+					if (window.console) {
+						console.log("+-- Parse times");
+						console.log("| CSS parse: " + (x.cssEnd - x.cssBegin));
+						console.log("| JS  doctype: " + (x.scriptEnd - x.scriptBegin));
+						console.log("| JS at end of page: " + last);
+						console.log("+-- All parsing: " + (x.parseEnd - x.parseBegin + last));
+					}
+
+					var ms = Math.round(x.parseEnd - x.parseBegin + last);
+					CustomEvent.fire('page_timing', { name: 'PARS', ms: ms, win: window });
+
+					if (window.performance && performance.timing) {
+						NOW.xperf.z = new Date().getTime();
+						setTimeout(function () {
+						   var x = performance.timing.loadEventEnd - performance.timing.domContentLoadedEventStart;
+						   CustomEvent.fire('page_timing', { name: 'DOMC', ms: x, win: window });
+						   x = performance.timing.loadEventStart - NOW.xperf.z;
+						   CustomEvent.fire('page_timing', { name: 'PROC', ms: x, win: window });
+						}, 250);  // has to be done after the loadEvent ends
+					}
+				})</script><script type="text/javascript" src="/scripts/doctype/js_includes_legacy.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" data-comment="navpage layout preferences, onfocus observation">/**
+	* Every window needs to observe these events.
+	*/
+	if (Prototype.Browser.IE && !isMSIE9) {
+		document.onfocusout = function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); };
+		document.onfocusin = function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); };
+	} else {
+		Event.observe(window, 'blur', function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); });
+		Event.observe(window, 'focus', function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); });
+	}</script><script type="text/javascript">g_swLoadTime = new StopWatch(g_loadTime);
+
+    if (window.CustomEvent){
+        CustomEvent.fireAll("ck_updated", "860a57b01b131110102e0fa2604bcb3bcadb652000105edbfd6c5a193c748c28e20ed2a4");
+	    CustomEvent.fireTop("navigation.complete", window);
+	}
+
+    addLoadEvent( function() {
+
+		if (isValidTouchDevice())
+			addTouchScrollClassToBody();
+
+      if (typeof g_ck != 'undefined') {
+        CustomEvent.observe("ck_updated", function(ck) { g_ck = ck; });
+        CustomEvent.fireAll("ck_updated", "860a57b01b131110102e0fa2604bcb3bcadb652000105edbfd6c5a193c748c28e20ed2a4");}try {
+              var helpico = getTopWindow().document.getElementById("help_ico");
+
+              if (helpico) {
+                var urlname=window.location.pathname.split("?");
+                var search_str = window.location.search;
+                
+                // if this is a form, extract the record's sys_id...
+                var sys_id_loc = search_str.search(/sys_id=[0-9a-f]{32}/i);
+                var sys_id_str = (sys_id_loc != -1) ? search_str.substr(sys_id_loc, 39) : null;
+                
+                // make the URL to our context help processor...
+                var url_search = "?sysparm_url=" + urlname[0];
+                if (sys_id_loc != -1)
+                   url_search += "&" + sys_id_str;
+
+               	helpico.href="context_help.do" + url_search;                	
+              }
+            } catch (exception) {}
+
+      synchCache();
+      pageLoaded();
+    });
+    
+    function synchCache() {
+      try {
+        var w = getTopWindow();
+        if (w.g_cache_message)
+          w.g_cache_message.stamp("573613301b131110102e0fa2604bcb70");
+  
+        if (w.g_cache_td)
+          w.g_cache_td.stamp("88d99bf41b131110102e0fa2604bcb10");
+      } catch(e) {}
+    }
+
+    function isValidTouchDevice() {
+		var navigator = window.navigator || {};
+		var devices;
+		try {
+			devices = 'iPad,Android'.split(',');
+		} catch(ex) {
+			devices = [];
+		}
+		return devices.some(function(item) {return item.trim() === navigator.platform;});
+	}
+
+	function addTouchScrollClassToBody() {
+		if ('ontouchstart' in window ||
+				(navigator.maxTouchPoints !== 'undefined' && navigator.maxTouchPoints > 0) ||
+				(navigator.msMaxTouchPoints !== 'undefined' && navigator.msMaxTouchPoints > 0)) {
+			if (typeof document.body != undefined) {
+				document.body.classList.add('touch_scroll');
+			}
+		}
+	}
+  </script><!--googleoff: all--><noscript>This site requires JavaScript to be enabled</noscript> <!--googleon: all--><script type="text/javascript" src="/scripts/app.guided_tours/js_guided_tours_includes.jsx?v=03-17-2022_1811"></script></head><body class="                -polaris " data-formName="session_timeout"><span class="sr-only"><div id="html_page_aria_live_polite" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="polite"></div><div id="html_page_aria_live_assertive" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="assertive"></div></span><div class="outputmsg_div"><div id="output_messages" class="outputmsg_container outputmsg_hide"><button type="button" aria-label="Close Messages" id="close-messages-btn" class="btn btn-icon close icon-cross" onclick="GlideUI.get().onCloseMessagesButtonClick(this); return false;"></button><div class="outputmsg_div" aria-live="polite" role="region" data-server-messages="false"></div></div><script>addRenderEvent(function() {CustomEvent.fire('glide_optics_inspect_update_watchfield', '');});
+
+			var accessibilityEnabled = Boolean(false);
+			if (accessibilityEnabled) {
+				$j(function() {
+					$j('#output_messages .btn.btn-icon.close').focus();
+				});
+			}</script><span class="ui_notification" data-type="session_change" data-text="" data-attr-session_domain="global"></span></div><div class="loading-container"><h1 class="loading-message">You are not logged in, or your session has expired. Redirecting to the login page</h1><div class="loading-indicator icon-loading icon-lg"></div></div><script data-comment="loading_page redirect">setTimeout(function() {
+				top.location.href = 'nav_to.do?uri=welcome.do';
+			}, 1500);</script><div style="border:none; visibility:hidden"><form name="sys_personalize" style="display:inline" method="GET" action="slushbucket.do"><input type="hidden" name="sysparm_referring_url" value="session_timeout.do"></input><input type="hidden" name="sysparm_view" value=""></input></form></div><script>(function() {
+        addLateLoadEvent(throwFrameLoaded);
+        // find if padding is needed
+        var pad = (isMSIE6 || isMSIE7 || navigator.userAgent.indexOf('MSIE 8') != -1) ? 1 : 0;
+        function throwFrameLoaded() {
+            try {
+                if (window.parent.CustomEvent) {
+                    // history suggests that if we don't size it down on page load,
+                    // when we check the height it will show the previous page's height
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, 10);
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, getPageHeight());
+                }
+            } catch (e) {}
+        }
+        function throwFrameSized() {
+            try {
+                if (window.parent.CustomEvent) {
+                    // IE9/IE10: resize events will be continuously triggered when there is a difference between document.body.scrollHeight and window.frameElement.height
+                    // to solve this issue, we do not fire event if the height we are going to set is the same as the height obtained after the previous fired event
+                    var previousHeight = window["g_iframe_height"];
+                    var pageHeight = getPageHeight();
+                    if (previousHeight != pageHeight) {
+                        window.parent.CustomEvent.fire('content_frame.resized', self.name, pageHeight);
+                        // IE9/IE10: page height may be changed again after the above firing. So we have to call getPageHeight() to get the new height after the above event has been fired.
+                        window["g_iframe_height"] = getPageHeight();
+                    }
+                }
+            } catch (e) {}
+        }
+
+        function throwFrameSizedSmaller(){
+            try {
+                if (window.parent.CustomEvent) {
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, getPageHeight(true));
+                }
+            } catch (e) {}
+        }
+
+        /**
+         * Simply speaking, scrollHeight and offsetHeight work differently on different browsers
+         * and in and out of quirks mode. IE9 has bugs that do not report them correctly even if
+         * you pick the right one, so we've built some extra controls.
+         */
+        function getPageHeight(resizeSmall) {
+            var popupElement, popupHeight;
+            // first, look for popups
+            var popups = $$('body > div.popup, .modal.in > .modal-dialog');
+            if (popups.length > 0) {
+                popupElement = popups[0];
+                popupHeight = popupElement.scrollHeight + popupElement.offsetTop;
+                //padding is needed or else the bottom border of the popup will be missing
+                return (document.body.scrollHeight > popupHeight ? document.body.scrollHeight : popupHeight) + pad;
+            }
+            // then, look for form elements
+            // use more specific selector to reduce browser response time
+            if ($$('body > div.section_header_content_no_scroll').length > 0) {
+                var mainContentHeight = $$('body > div.section_header_content_no_scroll')[0].scrollHeight;
+                
+                // we use the form_title class to distinguish between UI15+ where the form title actually adds to the height
+                var header = $$('body > div.section_header_div_no_scroll.form_title');
+                var headerHeight = header.length == 0 ? 0 : header[0].getHeight();
+                return mainContentHeight + headerHeight;
+            }
+            // then, look for touch scroll elements *CALGARY and forward*
+            if ($$('body > .touch_scroll').length > 0)
+                return $$('body > .touch_scroll')[0].scrollHeight;
+            // then, get the normal page height
+            if (document.body.scrollHeight || document.documentElement.scrollHeight) {
+                if (!resizeSmall){
+                    if(document.body.scrollHeight > document.documentElement.scrollHeight)
+                        return document.body.scrollHeight;
+                    else
+                        return document.documentElement.scrollHeight;
+                }
+                else{
+                    if(document.documentElement.scrollHeight > document.body.scrollHeight)
+                        return document.body.scrollHeight;
+                    else
+                        return document.documentElement.scrollHeight;
+                }
+            }
+            return document.body.offsetHeight;
+        }
+        // start observing only after page has been loaded to avoid handling large number of resize events especially on IE 7 and IE 8
+        addAfterPageLoadedEvent(function() {
+            CustomEvent.observe('frame.resized', throwFrameSized);
+            CustomEvent.observe('frame.resized.smaller', throwFrameSizedSmaller);
+            CustomEvent.observe('partial.page.reload', throwFrameLoaded); // specifically, reports and lists that cause the page to shrink
+            Event.observe(document.onresize ? document : window, "resize", throwFrameSized);
+            _frameChanged();
+        });
+    })();</script><span style="display:none" data-comments="js_includes_last_doctype"></span><script>NOW.xperf.lastDoctypeBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_last_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/heisenberg/heisenberg_all.jsx?v=03-17-2022_1811"></script><script type="text/javascript" src="/scripts/js_includes_list_edit_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/transaction_scope_includes.jsx?v=03-17-2022_1811"></script><script>if ('') 
+			GlideTransactionScope.setTransactionScope('');
+		if ('') 
+			GlideTransactionScope.setRecordScope('');
+		if ('') 
+			GlideTransactionScope.setTransactionUpdateSet('');
+		if (typeof g_form != 'undefined')
+			$(g_form.getFormElement()).fire('glidescope:initialized', {gts : GlideTransactionScope});</script><span style="display:none" data-comments="requires"></span><script>NOW.xperf.lastDoctypeEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script>NOW.xperf.dbContextBegin = NOW.xperf.now();</script><script>NOW.xperf.dbContextEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script data-description="MessagesTag">(function() {
+ var messages = new GwtMessage();
+messages.set('Browser response time');
+messages.set('Timing details');
+messages.set('{0} of {1} {2}: {3}');
+messages.set('{0} of {1} Other: {2}');
+messages.set('{0} of {1} {2}: {3}');
+})()</script><script id="glide:page_timing_div" type="application/xml"><button class="pointerhand icon-stop-watch btn btn-icon btn-response-time " type="button" aria-controls="glide:timing_widget" title="Response time(ms): #{RESP}, Network: #{NETW}, server: #{SERV}, browser: #{REND}" aria-label="Response Time"></button><div style="display: none"><div class="timing_span" id="glide:timing_widget">Response time(ms): #{RESP}, Network: #{NETW}, server: #{SERV}, browser: #{REND}<div class="timingGraphDiv"><span class="timing_graph" data-aria-label="Show Timing Breakdown"><span class="timing_network" title="Network #{NETW}ms"></span><span class="timing_server" title="Server #{SERV}ms"></span><span class="timing_browser" title="Browser #{REND}ms"></span></span></div><table class="table table-condensed table-timing-detail" aria-label="Browser timing detail"><thead><tr><th colspan="2">Browser timing detail</th><th>Time</th></tr></thead><tbody id="page_timing_details"></tbody></table></div></div></script><script id="glide:page_timing_details" type="application/xml"><div class="timing_details">#{details}</div></script><script id="glide:page_timing_detail_line" type="application/xml"><tr class="#{has_children}" data-children="#{child_count}" aria-label="#{has_aria_label}"><td colspan="2">#{HTML:name}</td><td>#{ms} ms</td></tr>#{children}</script><script id="glide:page_timing_child_line" type="application/xml"><tr aria-label="#{childAriaLabel}"><td></td><td>#{HTML:name}</td><td>#{ms} ms</td></tr></script><script type="text/javascript">var g_serverTime = parseInt("31") + parseInt("0");
+            var g_logClientViewRoles = "";
+
+			// do not do this for the navigation menu
+            if (window.name != 'gsft_nav') {
+				 addAfterPageLoadedEvent(function() {
+					 if (window.performance)
+						setTimeGraph();
+					 else 
+						firePageTimer();
+				 });
+			 }
+			 
+			function setTimeGraph() {
+				if (window.performance.timing.loadEventEnd > 0)
+			 		firePageTimer();
+			 	else 
+			 		setTimeout(setTimeGraph, 300);
+			 }
+			 
+			function firePageTimer() {
+				 if (window.performance && performance.timing.requestStart != performance.timing.responseStart) {
+				 	var p = performance.timing;
+
+				 	CustomEvent.fire('page_timing', { name: 'SERV', ms: p.responseEnd - p.requestStart});
+				 	CustomEvent.fire('page_timing', { name: 'REND', ms: (p.loadEventEnd - p.responseEnd) });
+				 	CustomEvent.fire('page_timing_network', { name: 'NETW', ms: (p.responseEnd - p.navigationStart) });
+				 } else {
+				    CustomEvent.fire('page_timing', { name: 'SERV', ms: g_serverTime });
+					CustomEvent.fire('page_timing', { name: 'REND', startTime: g_loadTime });
+					CustomEvent.fire('page_timing_network', { name: 'NETW', loadTime: g_loadTime });
+				 }
+
+			 CustomEvent.fire('page_timing_show', { show: ''  });var o = {};
+	      o.types = {};o.types['SECT'] = true;o.types['RLV2'] = true;o.types['UIOL'] = true;o.types['CSOL'] = true;
+	
+	      o.transaction_id = '4e0a1f341b131110102e0fa2604bcb19';
+	      o.table_name = '';
+	      o.form_name = 'session_timeout';
+	      o.view_id = 'Default view';
+	      o.logged_in = false;
+	      o.win = window;
+	      CustomEvent.fire('page_timing_client', o);}
+			 
+            // The following line is used to set the time when we start requesting a new page
+            Event.observe(window, 'beforeunload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+                CustomEvent.fireTop('request_start', document);
+            });
+
+            // simple pages fire this (stats.do, etc.)
+            CustomEvent.observe('simple_page.unload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+            }); 
+
+            // indicate we have completed the request (used by RequestManager.js for cancel widget)
+            addLoadEvent(function() {
+            	CustomEvent.fireTop("request_complete", window.location);
+            });</script><script type="text/javascript" src="/scripts/doctype/z_last_include.jsx?v=03-17-2022_1811"></script></body><script type="text/html" id="popup_template"><div class="popup popup_form" style=""><iframe src="$src" style=""></iframe></div></script></html>
+
+10:36:20.530 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 180; columnNumber: 30; The entity name must immediately follow the '&' in the entity reference.
+10:36:20.532 [print] <!DOCTYPE html><html lang="en" class=" ltr " data-doctype="true" dir="ltr" ontouchend="CustomEvent.fireAll('body_clicked', event);" onclick="CustomEvent.fireAll('body_clicked', event);"><head><title>ServiceNow</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"></meta><meta http-equiv="cache-control" content="public"></meta><script src="/uxasset/externals/service-worker/loader.jsdbx?sysparm_substitute=false"></script><script>var mswDisabledValue = "false";
+			var disabled = mswDisabledValue === 'true' ? true : false;
+			var serviceWorkers = JSON.parse("[{\"scope\":\"/\",\"serviceWorkerUrl\":\"/uxsw/scope/root.js\"},{\"scope\":\"/x\",\"serviceWorkerUrl\":\"/uxsw/scope/now_x.js\"},{\"scope\":\"/now\",\"serviceWorkerUrl\":\"/uxsw/scope/now_x.js\"}]");
+			var SERVICE_WORKER_MANAGER_CONFIG = {disabled, serviceWorkers};
+			if (window.serviceWorkerManager) window.serviceWorkerManager.init(SERVICE_WORKER_MANAGER_CONFIG);</script><meta name="viewport" content="initial-scale=1.0"></meta><script type="text/javascript" data-description="globals population">
+	window.NOW = window.NOW || {};
+	var g_loadTime = new Date();
+	var lastActivity = new Date();
+	var g_lang = 'en';
+	var g_system_lang = 'en';
+	var g_enhanced_activated = 'true';
+	  var g_popup_timeout = parseInt(100);
+	var g_export_warn_threshold = parseInt(10000);
+	  var g_event_handler_ids = {};
+	var g_event_handlers = [];
+	var g_event_handlers_onLoad = [];
+	var g_event_handlers_onSubmit = [];
+	var g_event_handlers_onChange = [];
+	var g_event_handlers_onCellEdit = {};
+	var g_event_handlers_localCache = {};
+	var g_event_handlers_queryTracking = true;
+	var g_user_date_time_format = "yyyy-MM-dd HH:mm:ss";
+	var g_user_date_format = "yyyy-MM-dd";
+	var g_user_decimal_separator = ".";
+	var g_user_grouping_separator = ",";
+	var g_glide_list_separator = ", ";
+	var g_allow_field_dependency_for_templates = ("true" === "true");
+	var g_tz_offset = -28800000;
+	  var g_tz_user_offset = true;
+	var g_first_day_of_week = parseInt(1, 10);
+	var g_date_picker_first_day_of_week = parseInt(0, 10);
+	  var g_full_calendar_edit = true;
+	var g_submitted = false;
+	var g_max_table_length = 80;
+	var g_fontSizePreference = "";
+	var g_fontSize = "10pt";
+	// use to be the sys_property glide.ui.js_error_notify, hard coded for PRB603998
+	var g_jsErrorNotify = "true";
+	var g_cancelPreviousTransaction = true;
+	var g_text_direction = "ltr";
+	var g_glide_list_filter_max_length =  parseInt("0", 10);
+	var g_accessibility = false;
+	var g_accessibility_tooltips = false;
+	var g_accessibility_tooltip_duration = parseInt("10", 10);
+	var g_accessibility_visual_patterns = false;
+	var g_accessibility_screen_reader_table = false;
+	var g_detail_row = false;
+	var g_builddate = "03-17-2022_1811";
+	// default values to be used in absence of user preferences are hard coded below
+	// as well as in keyboardShortcuts.js and keyboard_preference_changer.xml
+	window.g_keyboard_shortcuts = {};
+	window.g_keyboard_shortcuts.allow_in_input_fields = false;
+	window.g_keyboard_shortcuts.enabled = true;
+	window.g_keyboard_shortcuts.global_search = {};
+	window.g_keyboard_shortcuts.global_search.enabled = true;
+	window.g_keyboard_shortcuts.global_search.key_combination = 'ctrl+alt+g';
+	window.g_keyboard_shortcuts.main_frame = {};
+	window.g_keyboard_shortcuts.main_frame.enabled = true;
+	window.g_keyboard_shortcuts.main_frame.key_combination = 'ctrl+alt+p';
+	window.g_keyboard_shortcuts.navigator_toggle = {};
+	window.g_keyboard_shortcuts.navigator_toggle.enabled = true;
+	window.g_keyboard_shortcuts.navigator_toggle.key_combination = 'ctrl+alt+c';
+	window.g_keyboard_shortcuts.navigator_filter = {};
+	window.g_keyboard_shortcuts.navigator_filter.enabled = true;
+	window.g_keyboard_shortcuts.navigator_filter.key_combination = 'ctrl+alt+f';
+	window.g_keyboard_shortcuts.impersonator = {}
+	window.g_keyboard_shortcuts.impersonator.enabled = true;
+	window.g_keyboard_shortcuts.impersonator.key_combination = 'ctrl+alt+i';
+	var g_concourse_onmessage_enforce_same_origin = 'true'.toLowerCase() === 'true';
+	var g_concourse_onmessage_enforce_same_origin_whitelist = '';
+	window.g_load_functions = [];
+	window.g_render_functions = [];
+	window.g_late_load_functions = [];
+	window.g_tiny_url = {};
+	window.g_tiny_url.use_tiny = 'true' === 'true';
+	window.g_tiny_url.min_length = parseInt('1024');
+	
+	
+	var g_ck = '860a57b01b131110102e0fa2604bcb3bcadb652000105edbfd6c5a193c748c28e20ed2a4';
+	
+
+	
+	var g_acWaitTime = parseInt(250);
+	
+
+	var g_autoRequest = '';
+
+	try {
+		window.NOW.dateFormat = JSON.parse("{\"timeAgo\": false, \"dateBoth\": false}");
+	} catch (e) {
+		window.NOW.dateFormat = {timeAgo: false, dateBoth: false};
+	}
+
+	window.NOW.dateFormat.dateStringFormat = "yyyy-MM-dd";
+	window.NOW.dateFormat.timeStringFormat = "HH:mm:ss";
+	window.NOW.shortDateFormat = false;
+	window.NOW.listTableWrap = true;
+	window.NOW.compact = false;
+  	window.NOW.templateToggle = false;
+	window.NOW.tabbed = true;
+	window.NOW.permalink = true;
+	window.NOW.useSimpleStorage = true;
+	window.NOW.httpRequestCompressionThreshold = 40000;
+	window.NOW.httpRequestCompressionLevel = -1;
+	window.NOW.httpRequestCompressionMemoryLevel = -1;
+	window.NOW.deferAmbConnection = false;
+	window.NOW.deferredAmbConnectionTimeout = 10000;
+	window.NOW.simpleStorageSynch = "573613301b131110102e0fa2604bcb70";
+	window.NOW.language =  'en';
+	window.NOW.listOpenInAppTab = false;
+	window.NOW.floatingScrollbars = false;
+	
+	window.NOW.user = {};
+	window.NOW.user.preferences = [];
+	window.NOW.user.roles = '';
+	window.NOW.user.allRoles = '';
+	window.NOW.user.userID = '5136503cc611227c0183e96598c4f706';
+	window.NOW.user.departmentID = '';
+	window.NOW.user.firstName = '';
+	window.NOW.user.lastName = 'Guest';
+	window.NOW.user.name = 'guest';
+  	window.NOW.user.isImpersonating = false;
+	window.NOW.batch_glide_ajax_requests = 'true' === 'true';
+	window.NOW.batch_glide_ajax_requests_max_time_in_queue = ~~'50';
+	window.NOW.batch_glide_ajax_disable_time = ~~'1000';
+
+	window.NOW.currency = {};
+	window.NOW.currency.code = 'USD';
+	window.NOW.locale = {};
+	window.NOW.locale.code = 'en_US';
+
+	window.NOW.attachment = {};
+	
+	window.NOW.attachment.overflow_limit =  parseInt('3', 10);
+	window.NOW.isPolarisEnabled = "true";
+	window.NOW.polaris_page_info ={"canUsePolarisCSS":true,"canUsePolarisTemplates":true,"jvar_form_name":"session_timeout"};</script><script data-comment="GlideUser initialization">(function() {
+		 g_render_functions.push(setGlideUser);
+		function setGlideUser() {
+			if (window.g_user || !window.GlideUser)
+		return;
+
+		window.g_user = new GlideUser(NOW.user.name,
+			  NOW.user.firstName,
+			  NOW.user.lastName,
+			  NOW.user.roles,
+			  NOW.user.userID,
+			  NOW.user.departmentID);
+		window.g_user.setRoles(NOW.user.allRoles, true);
+		}
+	})();</script><script data-description="NOW glide web analytics siteid and url">window.snWebaConfig = window.snWebaConfig || {};
+		// glide web analytics config
+		window.snWebaConfig.siteId = "0";
+		window.snWebaConfig.trackerURL = "";
+		window.snWebaConfig.webaScriptPath = "/scripts/piwik-3.1.1/thirdparty/piwik.min.js";
+		window.snWebaConfig.ambClient = (window.g_ambClient) ? window.g_ambClient : ((window.amb)? window.amb.getClient(): "");
+		window.snWebaConfig.subscribed = false;</script><script type="text/javascript" src="/ConditionalFocus.jsdbx?v=03-17-2022_1811&amp;c=7_88"></script><link href="favicon.ico?v=4" rel="shortcut icon"></link><script>// window.performance in Chrome, Firefox, and Internet Explorer 9+ (not Safari)
+				window.NOW.xperf = window.performance || {};
+				if (!NOW.xperf.now) {
+					NOW.xperf.now = function() { return new Date().getTime(); };
+				}
+				NOW.xperf.parseBegin = NOW.xperf.now();
+				NOW.xperf.cssBegin = NOW.xperf.now();</script><link type="text/css" rel="stylesheet" href="/styles/css_includes_doctype_polaris.cssx?v=03-17-2022_1811&amp;c=8e6697301b131110102e0fa2604bcb25&amp;theme=Polaris"></link><script>window.NOW = window.NOW || {};
+		 NOW.isUsingPolaris = true;</script><link type="text/css" rel="stylesheet" href="/styles/polarisberg/css_includes_polarisberg.cssx?v=03-17-2022_1811&amp;c=8e6697301b131110102e0fa2604bcb25&amp;theme=Polaris"></link><link type="text/css" rel="stylesheet" href="/polarisberg_theme_variables.do?c=hnsK6bkZtvJNOUzZMYmfkWgB9Bc="></link><script>NOW.xperf.cssEnd = NOW.xperf.now();
+			NOW.xperf.scriptBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/js_includes_customer.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script>NOW.xperf.scriptEnd = NOW.xperf.now();
+				NOW.xperf.parseEnd = NOW.xperf.now();
+				$j(function() {
+					var x = NOW.xperf;
+					var last = x.lastDoctypeEnd - x.lastDoctypeBegin;
+					if (window.console) {
+						console.log("+-- Parse times");
+						console.log("| CSS parse: " + (x.cssEnd - x.cssBegin));
+						console.log("| JS  doctype: " + (x.scriptEnd - x.scriptBegin));
+						console.log("| JS at end of page: " + last);
+						console.log("+-- All parsing: " + (x.parseEnd - x.parseBegin + last));
+					}
+
+					var ms = Math.round(x.parseEnd - x.parseBegin + last);
+					CustomEvent.fire('page_timing', { name: 'PARS', ms: ms, win: window });
+
+					if (window.performance && performance.timing) {
+						NOW.xperf.z = new Date().getTime();
+						setTimeout(function () {
+						   var x = performance.timing.loadEventEnd - performance.timing.domContentLoadedEventStart;
+						   CustomEvent.fire('page_timing', { name: 'DOMC', ms: x, win: window });
+						   x = performance.timing.loadEventStart - NOW.xperf.z;
+						   CustomEvent.fire('page_timing', { name: 'PROC', ms: x, win: window });
+						}, 250);  // has to be done after the loadEvent ends
+					}
+				})</script><script type="text/javascript" src="/scripts/doctype/js_includes_legacy.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" data-comment="navpage layout preferences, onfocus observation">/**
+	* Every window needs to observe these events.
+	*/
+	if (Prototype.Browser.IE && !isMSIE9) {
+		document.onfocusout = function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); };
+		document.onfocusin = function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); };
+	} else {
+		Event.observe(window, 'blur', function() { CustomEvent.fireTop(GlideEvent.WINDOW_BLURRED, window); });
+		Event.observe(window, 'focus', function() { CustomEvent.fireTop(GlideEvent.WINDOW_FOCUSED, window); });
+	}</script><script type="text/javascript">g_swLoadTime = new StopWatch(g_loadTime);
+
+    if (window.CustomEvent){
+        CustomEvent.fireAll("ck_updated", "860a57b01b131110102e0fa2604bcb3bcadb652000105edbfd6c5a193c748c28e20ed2a4");
+	    CustomEvent.fireTop("navigation.complete", window);
+	}
+
+    addLoadEvent( function() {
+
+		if (isValidTouchDevice())
+			addTouchScrollClassToBody();
+
+      if (typeof g_ck != 'undefined') {
+        CustomEvent.observe("ck_updated", function(ck) { g_ck = ck; });
+        CustomEvent.fireAll("ck_updated", "860a57b01b131110102e0fa2604bcb3bcadb652000105edbfd6c5a193c748c28e20ed2a4");}try {
+              var helpico = getTopWindow().document.getElementById("help_ico");
+
+              if (helpico) {
+                var urlname=window.location.pathname.split("?");
+                var search_str = window.location.search;
+                
+                // if this is a form, extract the record's sys_id...
+                var sys_id_loc = search_str.search(/sys_id=[0-9a-f]{32}/i);
+                var sys_id_str = (sys_id_loc != -1) ? search_str.substr(sys_id_loc, 39) : null;
+                
+                // make the URL to our context help processor...
+                var url_search = "?sysparm_url=" + urlname[0];
+                if (sys_id_loc != -1)
+                   url_search += "&" + sys_id_str;
+
+               	helpico.href="context_help.do" + url_search;                	
+              }
+            } catch (exception) {}
+
+      synchCache();
+      pageLoaded();
+    });
+    
+    function synchCache() {
+      try {
+        var w = getTopWindow();
+        if (w.g_cache_message)
+          w.g_cache_message.stamp("573613301b131110102e0fa2604bcb70");
+  
+        if (w.g_cache_td)
+          w.g_cache_td.stamp("88d99bf41b131110102e0fa2604bcb10");
+      } catch(e) {}
+    }
+
+    function isValidTouchDevice() {
+		var navigator = window.navigator || {};
+		var devices;
+		try {
+			devices = 'iPad,Android'.split(',');
+		} catch(ex) {
+			devices = [];
+		}
+		return devices.some(function(item) {return item.trim() === navigator.platform;});
+	}
+
+	function addTouchScrollClassToBody() {
+		if ('ontouchstart' in window ||
+				(navigator.maxTouchPoints !== 'undefined' && navigator.maxTouchPoints > 0) ||
+				(navigator.msMaxTouchPoints !== 'undefined' && navigator.msMaxTouchPoints > 0)) {
+			if (typeof document.body != undefined) {
+				document.body.classList.add('touch_scroll');
+			}
+		}
+	}
+  </script><!--googleoff: all--><noscript>This site requires JavaScript to be enabled</noscript> <!--googleon: all--><script type="text/javascript" src="/scripts/app.guided_tours/js_guided_tours_includes.jsx?v=03-17-2022_1811"></script></head><body class="                -polaris " data-formName="session_timeout"><span class="sr-only"><div id="html_page_aria_live_polite" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="polite"></div><div id="html_page_aria_live_assertive" role="region" aria-relevant="additions text" aria-atomic="false" aria-live="assertive"></div></span><div class="outputmsg_div"><div id="output_messages" class="outputmsg_container outputmsg_hide"><button type="button" aria-label="Close Messages" id="close-messages-btn" class="btn btn-icon close icon-cross" onclick="GlideUI.get().onCloseMessagesButtonClick(this); return false;"></button><div class="outputmsg_div" aria-live="polite" role="region" data-server-messages="false"></div></div><script>addRenderEvent(function() {CustomEvent.fire('glide_optics_inspect_update_watchfield', '');});
+
+			var accessibilityEnabled = Boolean(false);
+			if (accessibilityEnabled) {
+				$j(function() {
+					$j('#output_messages .btn.btn-icon.close').focus();
+				});
+			}</script><span class="ui_notification" data-type="session_change" data-text="" data-attr-session_domain="global"></span></div><div class="loading-container"><h1 class="loading-message">You are not logged in, or your session has expired. Redirecting to the login page</h1><div class="loading-indicator icon-loading icon-lg"></div></div><script data-comment="loading_page redirect">setTimeout(function() {
+				top.location.href = 'nav_to.do?uri=welcome.do';
+			}, 1500);</script><div style="border:none; visibility:hidden"><form name="sys_personalize" style="display:inline" method="GET" action="slushbucket.do"><input type="hidden" name="sysparm_referring_url" value="session_timeout.do"></input><input type="hidden" name="sysparm_view" value=""></input></form></div><script>(function() {
+        addLateLoadEvent(throwFrameLoaded);
+        // find if padding is needed
+        var pad = (isMSIE6 || isMSIE7 || navigator.userAgent.indexOf('MSIE 8') != -1) ? 1 : 0;
+        function throwFrameLoaded() {
+            try {
+                if (window.parent.CustomEvent) {
+                    // history suggests that if we don't size it down on page load,
+                    // when we check the height it will show the previous page's height
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, 10);
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, getPageHeight());
+                }
+            } catch (e) {}
+        }
+        function throwFrameSized() {
+            try {
+                if (window.parent.CustomEvent) {
+                    // IE9/IE10: resize events will be continuously triggered when there is a difference between document.body.scrollHeight and window.frameElement.height
+                    // to solve this issue, we do not fire event if the height we are going to set is the same as the height obtained after the previous fired event
+                    var previousHeight = window["g_iframe_height"];
+                    var pageHeight = getPageHeight();
+                    if (previousHeight != pageHeight) {
+                        window.parent.CustomEvent.fire('content_frame.resized', self.name, pageHeight);
+                        // IE9/IE10: page height may be changed again after the above firing. So we have to call getPageHeight() to get the new height after the above event has been fired.
+                        window["g_iframe_height"] = getPageHeight();
+                    }
+                }
+            } catch (e) {}
+        }
+
+        function throwFrameSizedSmaller(){
+            try {
+                if (window.parent.CustomEvent) {
+                    window.parent.CustomEvent.fire('content_frame.loaded', self.name, getPageHeight(true));
+                }
+            } catch (e) {}
+        }
+
+        /**
+         * Simply speaking, scrollHeight and offsetHeight work differently on different browsers
+         * and in and out of quirks mode. IE9 has bugs that do not report them correctly even if
+         * you pick the right one, so we've built some extra controls.
+         */
+        function getPageHeight(resizeSmall) {
+            var popupElement, popupHeight;
+            // first, look for popups
+            var popups = $$('body > div.popup, .modal.in > .modal-dialog');
+            if (popups.length > 0) {
+                popupElement = popups[0];
+                popupHeight = popupElement.scrollHeight + popupElement.offsetTop;
+                //padding is needed or else the bottom border of the popup will be missing
+                return (document.body.scrollHeight > popupHeight ? document.body.scrollHeight : popupHeight) + pad;
+            }
+            // then, look for form elements
+            // use more specific selector to reduce browser response time
+            if ($$('body > div.section_header_content_no_scroll').length > 0) {
+                var mainContentHeight = $$('body > div.section_header_content_no_scroll')[0].scrollHeight;
+                
+                // we use the form_title class to distinguish between UI15+ where the form title actually adds to the height
+                var header = $$('body > div.section_header_div_no_scroll.form_title');
+                var headerHeight = header.length == 0 ? 0 : header[0].getHeight();
+                return mainContentHeight + headerHeight;
+            }
+            // then, look for touch scroll elements *CALGARY and forward*
+            if ($$('body > .touch_scroll').length > 0)
+                return $$('body > .touch_scroll')[0].scrollHeight;
+            // then, get the normal page height
+            if (document.body.scrollHeight || document.documentElement.scrollHeight) {
+                if (!resizeSmall){
+                    if(document.body.scrollHeight > document.documentElement.scrollHeight)
+                        return document.body.scrollHeight;
+                    else
+                        return document.documentElement.scrollHeight;
+                }
+                else{
+                    if(document.documentElement.scrollHeight > document.body.scrollHeight)
+                        return document.body.scrollHeight;
+                    else
+                        return document.documentElement.scrollHeight;
+                }
+            }
+            return document.body.offsetHeight;
+        }
+        // start observing only after page has been loaded to avoid handling large number of resize events especially on IE 7 and IE 8
+        addAfterPageLoadedEvent(function() {
+            CustomEvent.observe('frame.resized', throwFrameSized);
+            CustomEvent.observe('frame.resized.smaller', throwFrameSizedSmaller);
+            CustomEvent.observe('partial.page.reload', throwFrameLoaded); // specifically, reports and lists that cause the page to shrink
+            Event.observe(document.onresize ? document : window, "resize", throwFrameSized);
+            _frameChanged();
+        });
+    })();</script><span style="display:none" data-comments="js_includes_last_doctype"></span><script>NOW.xperf.lastDoctypeBegin = NOW.xperf.now();</script><script type="text/javascript" src="/scripts/doctype/js_includes_last_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/heisenberg/heisenberg_all.jsx?v=03-17-2022_1811"></script><script type="text/javascript" src="/scripts/js_includes_list_edit_doctype.jsx?v=03-17-2022_1811&amp;lp=Fri_Nov_11_11_22_22_PST_2022&amp;c=7_88"></script><script type="text/javascript" src="/scripts/transaction_scope_includes.jsx?v=03-17-2022_1811"></script><script>if ('') 
+			GlideTransactionScope.setTransactionScope('');
+		if ('') 
+			GlideTransactionScope.setRecordScope('');
+		if ('') 
+			GlideTransactionScope.setTransactionUpdateSet('');
+		if (typeof g_form != 'undefined')
+			$(g_form.getFormElement()).fire('glidescope:initialized', {gts : GlideTransactionScope});</script><span style="display:none" data-comments="requires"></span><script>NOW.xperf.lastDoctypeEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script>NOW.xperf.dbContextBegin = NOW.xperf.now();</script><script>NOW.xperf.dbContextEnd = NOW.xperf.now();</script><span style="display:none" data-comments="db_context_menu_script"></span><script data-description="MessagesTag">(function() {
+ var messages = new GwtMessage();
+messages.set('Browser response time');
+messages.set('Timing details');
+messages.set('{0} of {1} {2}: {3}');
+messages.set('{0} of {1} Other: {2}');
+messages.set('{0} of {1} {2}: {3}');
+})()</script><script id="glide:page_timing_div" type="application/xml"><button class="pointerhand icon-stop-watch btn btn-icon btn-response-time " type="button" aria-controls="glide:timing_widget" title="Response time(ms): #{RESP}, Network: #{NETW}, server: #{SERV}, browser: #{REND}" aria-label="Response Time"></button><div style="display: none"><div class="timing_span" id="glide:timing_widget">Response time(ms): #{RESP}, Network: #{NETW}, server: #{SERV}, browser: #{REND}<div class="timingGraphDiv"><span class="timing_graph" data-aria-label="Show Timing Breakdown"><span class="timing_network" title="Network #{NETW}ms"></span><span class="timing_server" title="Server #{SERV}ms"></span><span class="timing_browser" title="Browser #{REND}ms"></span></span></div><table class="table table-condensed table-timing-detail" aria-label="Browser timing detail"><thead><tr><th colspan="2">Browser timing detail</th><th>Time</th></tr></thead><tbody id="page_timing_details"></tbody></table></div></div></script><script id="glide:page_timing_details" type="application/xml"><div class="timing_details">#{details}</div></script><script id="glide:page_timing_detail_line" type="application/xml"><tr class="#{has_children}" data-children="#{child_count}" aria-label="#{has_aria_label}"><td colspan="2">#{HTML:name}</td><td>#{ms} ms</td></tr>#{children}</script><script id="glide:page_timing_child_line" type="application/xml"><tr aria-label="#{childAriaLabel}"><td></td><td>#{HTML:name}</td><td>#{ms} ms</td></tr></script><script type="text/javascript">var g_serverTime = parseInt("31") + parseInt("0");
+            var g_logClientViewRoles = "";
+
+			// do not do this for the navigation menu
+            if (window.name != 'gsft_nav') {
+				 addAfterPageLoadedEvent(function() {
+					 if (window.performance)
+						setTimeGraph();
+					 else 
+						firePageTimer();
+				 });
+			 }
+			 
+			function setTimeGraph() {
+				if (window.performance.timing.loadEventEnd > 0)
+			 		firePageTimer();
+			 	else 
+			 		setTimeout(setTimeGraph, 300);
+			 }
+			 
+			function firePageTimer() {
+				 if (window.performance && performance.timing.requestStart != performance.timing.responseStart) {
+				 	var p = performance.timing;
+
+				 	CustomEvent.fire('page_timing', { name: 'SERV', ms: p.responseEnd - p.requestStart});
+				 	CustomEvent.fire('page_timing', { name: 'REND', ms: (p.loadEventEnd - p.responseEnd) });
+				 	CustomEvent.fire('page_timing_network', { name: 'NETW', ms: (p.responseEnd - p.navigationStart) });
+				 } else {
+				    CustomEvent.fire('page_timing', { name: 'SERV', ms: g_serverTime });
+					CustomEvent.fire('page_timing', { name: 'REND', startTime: g_loadTime });
+					CustomEvent.fire('page_timing_network', { name: 'NETW', loadTime: g_loadTime });
+				 }
+
+			 CustomEvent.fire('page_timing_show', { show: ''  });var o = {};
+	      o.types = {};o.types['SECT'] = true;o.types['RLV2'] = true;o.types['UIOL'] = true;o.types['CSOL'] = true;
+	
+	      o.transaction_id = '4e0a1f341b131110102e0fa2604bcb19';
+	      o.table_name = '';
+	      o.form_name = 'session_timeout';
+	      o.view_id = 'Default view';
+	      o.logged_in = false;
+	      o.win = window;
+	      CustomEvent.fire('page_timing_client', o);}
+			 
+            // The following line is used to set the time when we start requesting a new page
+            Event.observe(window, 'beforeunload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+                CustomEvent.fireTop('request_start', document);
+            });
+
+            // simple pages fire this (stats.do, etc.)
+            CustomEvent.observe('simple_page.unload', function() {
+				new CookieJar({sameSite: 'strict'}).put('g_startTime', new Date().getTime());
+            }); 
+
+            // indicate we have completed the request (used by RequestManager.js for cancel widget)
+            addLoadEvent(function() {
+            	CustomEvent.fireTop("request_complete", window.location);
+            });</script><script type="text/javascript" src="/scripts/doctype/z_last_include.jsx?v=03-17-2022_1811"></script></body><script type="text/html" id="popup_template"><div class="popup popup_form" style=""><iframe src="$src" style=""></iframe></div></script></html>
+10:36:20.540 assertion failed: path: $['Server'][0], actual: 'ServiceNow', expected: 'ServiceNow123', reason: not a sub-string

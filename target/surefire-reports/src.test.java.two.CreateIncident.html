@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.two.CreateIncident</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">2</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-05-15 12:01:15 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1.1:14]">[1.1:14] Create a new Incident </a>
+</div>
+<div class="nav-item passed">
+<a href="#[1.2:15]">[1.2:15] Create a new Incident </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/two/CreateIncident.feature</span><span class="feature-description">Create a new Incident in ServiceNow</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:14]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.1:14]</span><span class="scenario-name">Create a new Incident </span>
+</div>
+<div class="scenario-time passed">ms: 2857</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.1:14]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.1:14]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">Given url 'https://dev106678.service-now.com/api/now/table/incident'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="1">12:01:10.664 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[1.1:14]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">And header Authorization = call read('basic-auth.js') { username: 'admin', password: 'v*CJ@eHh3Ls1' }</div>
+</div>
+<div class="time-cell passed">309</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">When request {"short_description" : This is created from karate data1}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Then method post</div>
+</div>
+<div class="time-cell passed">2546</div>
+</div>
+<div class="preformatted" data-parent="4">12:01:11.428 request:
+1 &gt; POST https://dev106678.service-now.com/api/now/table/incident
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46dipDSkBlSGgzTHMx
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 57
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dev106678.service-now.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_333)
+{"short_description":"This is created from karate data1"}
+
+12:01:13.528 response time in milliseconds: 1794.93
+1 &lt; 201
+1 &lt; Cache-Control: no-cache,no-store,must-revalidate,max-age=-1
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Sun, 15 May 2022 06:31:12 GMT
+1 &lt; Expires: 0
+1 &lt; Location: https://dev106678.service-now.com/api/now/table/incident/a8926bd02f2f4110387f2d6df699b6be
+1 &lt; Pragma: no-store,no-cache
+1 &lt; Server: ServiceNow
+1 &lt; Server-Timing: sem_wait;dur=1, sesh_wait;dur=0
+1 &lt; Set-Cookie: [JSESSIONID=E31AF926CD5B2B44DB5903FA69E0A32B; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.6e667145a6b725ece073c73683f34cfe; Max-Age=2147483647; Expires=Fri, 02-Jun-2090 09:45:19 GMT; Path=/; HttpOnly;Secure, glide_session_store=AC92A7DC2F6B4110387F2D6DF699B66C; Max-Age=1800; Expires=Sun, 15-May-2022 07:01:12 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev106678=2776913930.22337.0000; path=/; Httponly; Secure]
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Is-Logged-In: true
+1 &lt; X-Transaction-ID: e092a7dc2f6b
+{"result":{"parent":"","made_sla":"true","caused_by":"","watch_list":"","upon_reject":"cancel","sys_updated_on":"2022-05-15 06:31:12","child_incidents":"0","hold_reason":"","origin_table":"","task_effective_number":"INC0010203","approval_history":"","number":"INC0010203","resolved_by":"","sys_updated_by":"admin","opened_by":{"link":"https://dev106678.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441","value":"6816f79cc0a8016401c5a33be04be441"},"user_input":"","sys_created_on":"2022-05-15 06:31:12","sys_domain":{"link":"https://dev106678.service-now.com/api/now/table/sys_user_group/global","value":"global"},"state":"1","route_reason":"","sys_created_by":"admin","knowledge":"false","order":"","calendar_stc":"","closed_at":"","cmdb_ci":"","delivery_plan":"","contract":"","impact":"3","active":"true","work_notes_list":"","business_service":"","business_impact":"","priority":"5","sys_domain_path":"/","rfc":"","time_worked":"","expected_start":"","opened_at":"2022-05-15 06:31:12","business_duration":"","group_list":"","work_end":"","caller_id":"","reopened_time":"","resolved_at":"","approval_set":"","subcategory":"","work_notes":"","universal_request":"","short_description":"This is created from karate data1","close_code":"","correlation_display":"","delivery_task":"","work_start":"","assignment_group":"","additional_assignee_list":"","business_stc":"","cause":"","description":"","origin_id":"","calendar_duration":"","close_notes":"","notify":"1","service_offering":"","sys_class_name":"incident","closed_by":"","follow_up":"","parent_incident":"","sys_id":"a8926bd02f2f4110387f2d6df699b6be","contact_type":"","reopened_by":"","incident_state":"1","urgency":"3","problem_id":"","company":"","reassignment_count":"0","activity_due":"","assigned_to":"","severity":"3","comments":"","approval":"not requested","sla_due":"","comments_and_work_notes":"","due_date":"","sys_mod_count":"0","reopen_count":"0","sys_tags":"","escalation":"0","upon_approval":"proceed","correlation_id":"","location":"","category":"inquiry"}}</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="5">12:01:13.529 [print] {
+  "result": {
+    "parent": "",
+    "made_sla": "true",
+    "caused_by": "",
+    "watch_list": "",
+    "upon_reject": "cancel",
+    "sys_updated_on": "2022-05-15 06:31:12",
+    "child_incidents": "0",
+    "hold_reason": "",
+    "origin_table": "",
+    "task_effective_number": "INC0010203",
+    "approval_history": "",
+    "number": "INC0010203",
+    "resolved_by": "",
+    "sys_updated_by": "admin",
+    "opened_by": {
+      "link": "https://dev106678.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+      "value": "6816f79cc0a8016401c5a33be04be441"
+    },
+    "user_input": "",
+    "sys_created_on": "2022-05-15 06:31:12",
+    "sys_domain": {
+      "link": "https://dev106678.service-now.com/api/now/table/sys_user_group/global",
+      "value": "global"
+    },
+    "state": "1",
+    "route_reason": "",
+    "sys_created_by": "admin",
+    "knowledge": "false",
+    "order": "",
+    "calendar_stc": "",
+    "closed_at": "",
+    "cmdb_ci": "",
+    "delivery_plan": "",
+    "contract": "",
+    "impact": "3",
+    "active": "true",
+    "work_notes_list": "",
+    "business_service": "",
+    "business_impact": "",
+    "priority": "5",
+    "sys_domain_path": "/",
+    "rfc": "",
+    "time_worked": "",
+    "expected_start": "",
+    "opened_at": "2022-05-15 06:31:12",
+    "business_duration": "",
+    "group_list": "",
+    "work_end": "",
+    "caller_id": "",
+    "reopened_time": "",
+    "resolved_at": "",
+    "approval_set": "",
+    "subcategory": "",
+    "work_notes": "",
+    "universal_request": "",
+    "short_description": "This is created from karate data1",
+    "close_code": "",
+    "correlation_display": "",
+    "delivery_task": "",
+    "work_start": "",
+    "assignment_group": "",
+    "additional_assignee_list": "",
+    "business_stc": "",
+    "cause": "",
+    "description": "",
+    "origin_id": "",
+    "calendar_duration": "",
+    "close_notes": "",
+    "notify": "1",
+    "service_offering": "",
+    "sys_class_name": "incident",
+    "closed_by": "",
+    "follow_up": "",
+    "parent_incident": "",
+    "sys_id": "a8926bd02f2f4110387f2d6df699b6be",
+    "contact_type": "",
+    "reopened_by": "",
+    "incident_state": "1",
+    "urgency": "3",
+    "problem_id": "",
+    "company": "",
+    "reassignment_count": "0",
+    "activity_due": "",
+    "assigned_to": "",
+    "severity": "3",
+    "comments": "",
+    "approval": "not requested",
+    "sla_due": "",
+    "comments_and_work_notes": "",
+    "due_date": "",
+    "sys_mod_count": "0",
+    "reopen_count": "0",
+    "sys_tags": "",
+    "escalation": "0",
+    "upon_approval": "proceed",
+    "correlation_id": "",
+    "location": "",
+    "category": "inquiry"
+  }
+}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.2:15]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.2:15]</span><span class="scenario-name">Create a new Incident </span>
+</div>
+<div class="scenario-time passed">ms: 1848</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.2:15]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.2:15]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-cell passed">Given url 'https://dev106678.service-now.com/api/now/table/incident'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="6">12:01:13.534 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[1.2:15]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-cell passed">And header Authorization = call read('basic-auth.js') { username: 'admin', password: 'v*CJ@eHh3Ls1' }</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">When request {"short_description" : This is created from karate data2}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">Then method post</div>
+</div>
+<div class="time-cell passed">1843</div>
+</div>
+<div class="preformatted" data-parent="9">12:01:13.541 request:
+1 &gt; POST https://dev106678.service-now.com/api/now/table/incident
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46dipDSkBlSGgzTHMx
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 57
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dev106678.service-now.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_333)
+{"short_description":"This is created from karate data2"}
+
+12:01:15.383 response time in milliseconds: 1529.25
+1 &lt; 201
+1 &lt; Cache-Control: no-cache,no-store,must-revalidate,max-age=-1
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Sun, 15 May 2022 06:31:14 GMT
+1 &lt; Expires: 0
+1 &lt; Location: https://dev106678.service-now.com/api/now/table/incident/459223142f2f4110387f2d6df699b642
+1 &lt; Pragma: no-store,no-cache
+1 &lt; Server: ServiceNow
+1 &lt; Server-Timing: sem_wait;dur=0, sesh_wait;dur=0
+1 &lt; Set-Cookie: [JSESSIONID=7161614AD85E51A9296DBB46D0915AB5; Path=/; HttpOnly;Secure, glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly;Secure, glide_user_route=glide.6e667145a6b725ece073c73683f34cfe; Max-Age=2147483647; Expires=Fri, 02-Jun-2090 09:45:21 GMT; Path=/; HttpOnly;Secure, glide_session_store=4192AF142FAB4110387F2D6DF699B61B; Max-Age=1800; Expires=Sun, 15-May-2022 07:01:14 GMT; Path=/; HttpOnly;Secure, BIGipServerpool_dev106678=2776913930.22337.0000; path=/; Httponly; Secure]
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Is-Logged-In: true
+1 &lt; X-Transaction-ID: 8592af142fab
+{"result":{"parent":"","made_sla":"true","caused_by":"","watch_list":"","upon_reject":"cancel","sys_updated_on":"2022-05-15 06:31:14","child_incidents":"0","hold_reason":"","origin_table":"","task_effective_number":"INC0010204","approval_history":"","number":"INC0010204","resolved_by":"","sys_updated_by":"admin","opened_by":{"link":"https://dev106678.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441","value":"6816f79cc0a8016401c5a33be04be441"},"user_input":"","sys_created_on":"2022-05-15 06:31:14","sys_domain":{"link":"https://dev106678.service-now.com/api/now/table/sys_user_group/global","value":"global"},"state":"1","route_reason":"","sys_created_by":"admin","knowledge":"false","order":"","calendar_stc":"","closed_at":"","cmdb_ci":"","delivery_plan":"","contract":"","impact":"3","active":"true","work_notes_list":"","business_service":"","business_impact":"","priority":"5","sys_domain_path":"/","rfc":"","time_worked":"","expected_start":"","opened_at":"2022-05-15 06:31:14","business_duration":"","group_list":"","work_end":"","caller_id":"","reopened_time":"","resolved_at":"","approval_set":"","subcategory":"","work_notes":"","universal_request":"","short_description":"This is created from karate data2","close_code":"","correlation_display":"","delivery_task":"","work_start":"","assignment_group":"","additional_assignee_list":"","business_stc":"","cause":"","description":"","origin_id":"","calendar_duration":"","close_notes":"","notify":"1","service_offering":"","sys_class_name":"incident","closed_by":"","follow_up":"","parent_incident":"","sys_id":"459223142f2f4110387f2d6df699b642","contact_type":"","reopened_by":"","incident_state":"1","urgency":"3","problem_id":"","company":"","reassignment_count":"0","activity_due":"","assigned_to":"","severity":"3","comments":"","approval":"not requested","sla_due":"","comments_and_work_notes":"","due_date":"","sys_mod_count":"0","reopen_count":"0","sys_tags":"","escalation":"0","upon_approval":"proceed","correlation_id":"","location":"","category":"inquiry"}}</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="10">12:01:15.383 [print] {
+  "result": {
+    "parent": "",
+    "made_sla": "true",
+    "caused_by": "",
+    "watch_list": "",
+    "upon_reject": "cancel",
+    "sys_updated_on": "2022-05-15 06:31:14",
+    "child_incidents": "0",
+    "hold_reason": "",
+    "origin_table": "",
+    "task_effective_number": "INC0010204",
+    "approval_history": "",
+    "number": "INC0010204",
+    "resolved_by": "",
+    "sys_updated_by": "admin",
+    "opened_by": {
+      "link": "https://dev106678.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+      "value": "6816f79cc0a8016401c5a33be04be441"
+    },
+    "user_input": "",
+    "sys_created_on": "2022-05-15 06:31:14",
+    "sys_domain": {
+      "link": "https://dev106678.service-now.com/api/now/table/sys_user_group/global",
+      "value": "global"
+    },
+    "state": "1",
+    "route_reason": "",
+    "sys_created_by": "admin",
+    "knowledge": "false",
+    "order": "",
+    "calendar_stc": "",
+    "closed_at": "",
+    "cmdb_ci": "",
+    "delivery_plan": "",
+    "contract": "",
+    "impact": "3",
+    "active": "true",
+    "work_notes_list": "",
+    "business_service": "",
+    "business_impact": "",
+    "priority": "5",
+    "sys_domain_path": "/",
+    "rfc": "",
+    "time_worked": "",
+    "expected_start": "",
+    "opened_at": "2022-05-15 06:31:14",
+    "business_duration": "",
+    "group_list": "",
+    "work_end": "",
+    "caller_id": "",
+    "reopened_time": "",
+    "resolved_at": "",
+    "approval_set": "",
+    "subcategory": "",
+    "work_notes": "",
+    "universal_request": "",
+    "short_description": "This is created from karate data2",
+    "close_code": "",
+    "correlation_display": "",
+    "delivery_task": "",
+    "work_start": "",
+    "assignment_group": "",
+    "additional_assignee_list": "",
+    "business_stc": "",
+    "cause": "",
+    "description": "",
+    "origin_id": "",
+    "calendar_duration": "",
+    "close_notes": "",
+    "notify": "1",
+    "service_offering": "",
+    "sys_class_name": "incident",
+    "closed_by": "",
+    "follow_up": "",
+    "parent_incident": "",
+    "sys_id": "459223142f2f4110387f2d6df699b642",
+    "contact_type": "",
+    "reopened_by": "",
+    "incident_state": "1",
+    "urgency": "3",
+    "problem_id": "",
+    "company": "",
+    "reassignment_count": "0",
+    "activity_due": "",
+    "assigned_to": "",
+    "severity": "3",
+    "comments": "",
+    "approval": "not requested",
+    "sla_due": "",
+    "comments_and_work_notes": "",
+    "due_date": "",
+    "sys_mod_count": "0",
+    "reopen_count": "0",
+    "sys_tags": "",
+    "escalation": "0",
+    "upon_approval": "proceed",
+    "correlation_id": "",
+    "location": "",
+    "category": "inquiry"
+  }
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
